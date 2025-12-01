@@ -1,0 +1,619 @@
+{
+  "abyssal": {
+    "name": "Abyssal",
+    "category": "regular",
+    "effect": [
+      "20% chance to apply the Abyssal mutation 80% chance to increase fish weight by 1.3x",
+      "and a 20% chance for 0.6x"
+    ],
+    "tips": [
+      "Best paired with all-rounder rods without mutation passives, like the Rod of the Depths and Rod of The Forgotten Fang.",
+      "Worse version of Anomalous",
+      "Can be replaced with Quantum"
+    ]
+  },
+  "blessed": {
+    "name": "Blessed",
+    "category": "regular",
+    "effect": [
+      "+5% Shiny & Sparkling chance",
+      "+5% Progress speed",
+      "+5% Lure Speed ."
+    ],
+    "tips": [
+      "Best paired with the Destiny Rod for the highest Sparkling/Shiny odds, works best during Night of The Luminous or Shiny Surge."
+    ]
+  },
+  "blood_reckoning": {
+    "name": "Blood Reckoning",
+    "category": "regular",
+    "effect": [
+      "Sacrifice the player's health for a chance to apply the Sanguine (5×) mutation."
+    ],
+    "tips": [
+      "Best for rods with strong stats or minimal money-making attributes."
+    ]
+  },
+  "breezed": {
+    "name": "Breezed",
+    "category": "regular",
+    "effect": [
+      "During Windy: +100% luck, +20% Lure Speed, +10% progress speed",
+      "Outside of Windy: +50% luck, +10% Lure Speed, +10% progress speed"
+    ],
+    "tips": [
+      "Best paired with rods that have low luck, like the Midas Rod.",
+      "Can be replaced with Storming."
+    ]
+  },
+  "chaotic": {
+    "name": "Chaotic",
+    "category": "regular",
+    "effect": [
+      "8% chance for a fish to be Chaotic",
+      "multiplying its sell value by 8. Also stabs the fish occasionally",
+      "similar to the Trident Rod 's passive."
+    ],
+    "tips": [
+      "Best paired with rods that have minimal money-making attributes (e.g. Great Dreamer Rod).",
+      "Works well with low resilience rods since it behaves similarly to Trident Rod's passive."
+    ]
+  },
+  "chronos": {
+    "name": "Chronos",
+    "category": "regular",
+    "effect": [
+      "Every 2.5 seconds",
+      "the rod has a 50% chance to stop the fish from moving for 3 seconds."
+    ],
+    "tips": [
+      "Pairs best with rods requiring Perfect catches or with low resilience."
+    ]
+  },
+  "clever": {
+    "name": "Clever",
+    "category": "regular",
+    "effect": [
+      "x2.25 XP from all catches"
+    ],
+    "tips": [
+      "Better version of Insight.",
+      "Best paired with the Wisdom Rod for players who wish to level up fast.",
+      "Also useful for rods with fast lure speed like the Rod Of The Depths."
+    ]
+  },
+  "controlled": {
+    "name": "Controlled",
+    "category": "regular",
+    "effect": [
+      "Increases control bar size by 0.15."
+    ],
+    "tips": [
+      "Can Be Replaced With Resilient Or Mystical",
+      "Best paired with rods that you want to have more control on."
+    ]
+  },
+  "divine": {
+    "name": "Divine",
+    "category": "regular",
+    "effect": [
+      "+50% luck",
+      "+20% resilience",
+      "+25% Lure Speed ."
+    ],
+    "tips": [
+      "Better version of Lucky.",
+      "Best paired with rods that have low luck, like the Midas Rod.",
+      "Can be replaced with Immortal."
+    ]
+  },
+  "flashline": {
+    "name": "Flashline",
+    "category": "regular",
+    "effect": [
+      "25% chance for +75% Progress Speed",
+      "100% for +15% Progress Speed ."
+    ],
+    "tips": [
+      "Best paired with late-game or end-game rods such as the Ethereal Prism Rod"
+    ]
+  },
+  "ghastly": {
+    "name": "Ghastly",
+    "category": "regular",
+    "effect": [
+      "All fish caught become Translucent",
+      "10% to double caught fish"
+    ],
+    "tips": [
+      "Best paired with rods that have minimal money-making attributes, like the Arctic Rod.",
+      "Can be replaced with Abyssal."
+    ]
+  },
+  "hasty": {
+    "name": "Hasty",
+    "category": "regular",
+    "effect": [
+      "+55% Lure Speed"
+    ],
+    "tips": [
+      "Better version of Swift.",
+      "Best paired with rods that have slow Lure Speeds, like the Steady Rod and Kings Rod.",
+      "And high Lure Speed rods like the Trident Rod, Poseidon Rod, Volcanic Rod and Heaven's Rod for instant catches."
+    ]
+  },
+  "insight": {
+    "name": "Insight",
+    "category": "regular",
+    "effect": [
+      "x1.5 XP from all catches",
+      "+30% Lure Speed",
+      "30% to catch Purified fish"
+    ],
+    "tips": [
+      "Best paired with the Wisdom Rod for players who wish to level up fast.",
+      "Also useful for rods with fast lure speed like the Rod Of The Depths.",
+      "Can be replaced with Clever."
+    ]
+  },
+  "long": {
+    "name": "Long",
+    "category": "regular",
+    "effect": [
+      "+20% resilience",
+      "+15% Progress speed",
+      "+50 Studs length to how far your rod can be cast"
+    ],
+    "tips": [
+      "Could be paired with rods that have low control, low resilience, and low length on the rod's cast. For most rods, this enchant is generally not recommended to use."
+    ]
+  },
+  "lucky": {
+    "name": "Lucky",
+    "category": "regular",
+    "effect": [
+      "+25% luck",
+      "15% Lure Speed",
+      "Mutation chance by 50%."
+    ],
+    "tips": [
+      "Best paired with rods that have low luck, like the Midas Rod.",
+      "Can be replaced with Divine."
+    ]
+  },
+  "momentum": {
+    "name": "Momentum",
+    "category": "regular",
+    "effect": [
+      "Every Perfect Catch grants +2% Progress Speed",
+      "resilience",
+      "and lure speed",
+      "Regular catches reduce this by 4%",
+      "Max +40%."
+    ],
+    "tips": [
+      "Best with rods that benefit from Perfect catches (e.g. The Lost Rod, Luminescent Oath).",
+      "Can be paired with Seraphic Rod to increase effectiveness."
+    ]
+  },
+  "mutated": {
+    "name": "Mutated",
+    "category": "regular",
+    "effect": [
+      "+90% Mutation chance"
+    ],
+    "tips": [
+      "Best paired with rods that have a mutation passive for extra chances to getting it such as Mythical Rod, Rod Of The Eternal King and Voyager Rod.",
+      "Can be replaced with Abyssal."
+    ]
+  },
+  "noir": {
+    "name": "Noir",
+    "category": "regular",
+    "effect": [
+      "10% chance to catch Albino or Darkened fish",
+      "+20% fish size"
+    ],
+    "tips": [
+      "Best paired with rods that have a mutation passive for extra chances for getting it such as Mythical rod, Rod of the eternal king and Voyager rod",
+      "Can be replaced with Abyssal."
+    ]
+  },
+  "quality": {
+    "name": "Quality",
+    "category": "regular",
+    "effect": [
+      "+20% Lure Speed",
+      "+20% luck",
+      "+10% resilience",
+      "+5% Progress speed."
+    ],
+    "tips": [
+      "Best paired with all-rounder rods where no specific stat is desired, like the No-Life Rod."
+    ]
+  },
+  "resilient": {
+    "name": "Resilient",
+    "category": "regular",
+    "effect": [
+      "+35% resilience",
+      "+10% Size Boost"
+    ],
+    "tips": [
+      "Best paired with rods that have low resilience, such as the Trident, Mythical, and Destiny Rod to name a few."
+    ]
+  },
+  "scavenger": {
+    "name": "Scavenger",
+    "category": "regular",
+    "effect": [
+      "3× higher chance to catch Enchant Relics",
+      "Nukes",
+      "Treasure Maps and Threads",
+      "1.75× chance to catch Exalted Relics"
+    ],
+    "tips": [
+      "Could be paired with",
+      "Rod Of The Exalted One",
+      "for highest",
+      "Exalted Relics",
+      "chances (~1/457)."
+    ]
+  },
+  "scrapper": {
+    "name": "Scrapper",
+    "category": "regular",
+    "effect": [
+      "60% chance to not consume Bait"
+    ],
+    "tips": [
+      "Best paired with rods that consume large amounts of bait like the Mythical Rod or Kraken Rod.",
+      "Could also be paired with rods that have high lure speed, to reduce bait waste."
+    ]
+  },
+  "sea_king": {
+    "name": "Sea King",
+    "category": "regular",
+    "effect": [
+      "+30% fish size every catch"
+    ],
+    "tips": [
+      "Best paired with the Kings Rod to increase fish size by 65%.",
+      "Can be replaced with Sea Overlord."
+    ]
+  },
+  "steady": {
+    "name": "Steady",
+    "category": "regular",
+    "effect": [
+      "Grants +20% progress speed when reeling a fish",
+      "+0.05 control"
+    ],
+    "tips": [
+      "Best paired with rods that have low resilience and control.",
+      "Good for Fishes that reduce progress speed and for mass fishing like the Tempest Rod and the Challenger's Rod.",
+      "Can be replaced with Blessed Song."
+    ]
+  },
+  "storming": {
+    "name": "Storming",
+    "category": "regular",
+    "effect": [
+      "During Rainy: +100% luck",
+      "+50% Lure Speed",
+      "+50% chance to catch Electric fish Outside of Rainy: +50% luck",
+      "+25% Lure Speed",
+      "+25% chance to catch Electric fish"
+    ],
+    "tips": [
+      "Better version of Breezed.",
+      "Best paired with rods that have low luck, like the Midas Rod."
+    ]
+  },
+  "swift": {
+    "name": "Swift",
+    "category": "regular",
+    "effect": [
+      "+30% Lure Speed",
+      "+10% Progress Speed"
+    ],
+    "tips": [
+      "Best paired with rods with low Lure Speeds, like the Steady Rod and Kings Rod.",
+      "Can be replaced with Hasty."
+    ]
+  },
+  "unbreakable": {
+    "name": "Unbreakable",
+    "category": "regular",
+    "effect": [
+      "+10,000 Max Kg",
+      "+0.1 control bar size"
+    ],
+    "tips": [
+      "Best paired with rods that have decent stats but limited max weight, such as the Sunken Rod, Kraken Rod, Poseidon Rod and Tempest Rod.",
+      "Can be replaced with Herculean."
+    ]
+  },
+  "wormhole": {
+    "name": "Wormhole",
+    "category": "regular",
+    "effect": [
+      "80% chance to catch fish from a random location (Previously 45%)"
+    ],
+    "tips": [
+      "Well paired with Rod of The Depths, as its ghost passive can use it as well."
+    ]
+  },
+  "anomalous": {
+    "name": "Anomalous",
+    "category": "exalted",
+    "effect": [
+      "20% Chance to catch a duplicate fish and have it be Anomalous (4.44x Sell Value) [Previously 10% chance and 1.1x sell value]"
+    ],
+    "tips": [
+      "Better version of Abyssal.",
+      "Best paired with all-rounder rods without mutation passives, like the Rod of the Depths and Rod of The Forgotten Fang.",
+      "Not recommended to use on rods with a chance to get a specific mutated fish, such as Heaven's Rod, Kraken Rod, and Ethereal Prism Rod."
+    ]
+  },
+  "herculean": {
+    "name": "Herculean",
+    "category": "exalted",
+    "effect": [
+      "+25,000 Max Kg",
+      "+0.2 Control",
+      "+10% Progress Speed ."
+    ],
+    "tips": [
+      "Better version of Unbreakable.",
+      "Best paired with rods that have decent stats but limited max weight, such as the Sunken Rod, Poseidon Rod, Tempest Rod, Shamrock Rod and Kraken Rod."
+    ]
+  },
+  "immortal": {
+    "name": "Immortal",
+    "category": "exalted",
+    "effect": [
+      "+75% luck",
+      "+30% Progress speed ."
+    ],
+    "tips": [
+      "Better version of Divine, Lucky and Steady combined.",
+      "Best paired with the Midas Rod or Rod Of The Eternal King.",
+      "Can also be paired with low luck and no progress speed multiplier."
+    ]
+  },
+  "invincible": {
+    "name": "Invincible",
+    "category": "exalted",
+    "effect": [
+      "Allows the rod to fish in the Roslit Volcano & Brine Pool",
+      "+inf Max Kg"
+    ],
+    "tips": [
+      "Could be paired with Heaven's Rod, Rod of The Eternal King or Avalanche Rod to catch rare fish like Inferno Wood and Spectral Serpent.",
+      "Useless on Reinforced Rod and Magma Rod.",
+      "Necessary to use this enchant on the Duskwire rod due to its negative weight limit."
+    ]
+  },
+  "mystical": {
+    "name": "Mystical",
+    "category": "exalted",
+    "effect": [
+      "+25% luck",
+      "+45% resilience",
+      "+15% lure speed and +10% Progress Speed ."
+    ],
+    "tips": [
+      "Better version of Resilient (+35% resilience)",
+      "Best paired with rods that have low resilience, especially the Trident Rod, Mythical Rod, and Destiny Rod."
+    ]
+  },
+  "piercing": {
+    "name": "Piercing",
+    "category": "exalted",
+    "effect": [
+      "Adds +15% Progress Speed, Passive visual on control bar produces colored slashes depending on the background color of the rod in the equipment bag."
+    ],
+    "tips": [
+      "Could be paired with rods that have low",
+      "control",
+      "or low",
+      "resilience",
+      ", like the",
+      "Nocturnal Rod",
+      "and",
+      "Destiny Rod",
+      "."
+    ]
+  },
+  "quantum": {
+    "name": "Quantum",
+    "category": "exalted",
+    "effect": [
+      "25% chance for fish to be Subspace",
+      "+25% resilience"
+    ],
+    "tips": [
+      "Best enchantment for money-making.",
+      "Best paired with all-rounder rods like the Rod of the Depths, Kraken Rod, Tempest Rod, No-Life Rod and Rod of The Forgotten Fang.",
+      "Better version of Abyssal.",
+      "Also not recommended to use on rods with a chance to get a specific mutated fish, such as Heaven's Rod, Kraken Rod, and Ethereal Prism Rod."
+    ]
+  },
+  "sea_overlord": {
+    "name": "Sea Overlord",
+    "category": "exalted",
+    "effect": [
+      "+40% Fish Size (Previously 25%)"
+    ],
+    "tips": [
+      "Better version of Sea King (+30% fish size)",
+      "Best paired with the Kings Rod or Poseidon Rod (Due to king's blessing passive)"
+    ]
+  },
+  "cryogenic": {
+    "name": "Cryogenic",
+    "category": "cosmic",
+    "effect": [
+      "A small chance to fully freeze a lured fish"
+    ],
+    "tips": [
+      "Best paired with rods that have low resilience or control to better help catch the fish."
+    ]
+  },
+  "glittered": {
+    "name": "Glittered",
+    "category": "cosmic",
+    "effect": [
+      "Increases Shiny & Sparkling chances by 3%"
+    ],
+    "tips": [
+      "Useful when hunting for Shiny or Sparkling fishes."
+    ]
+  },
+  "overclocked": {
+    "name": "Overclocked",
+    "category": "cosmic",
+    "effect": [
+      "Increases Progress Speed by 5% for any fish (Includes Scylla and Apex fish.)"
+    ],
+    "tips": [
+      "Best paired with rods that have good resilience to catch Apex fish and the Scylla."
+    ]
+  },
+  "sea_prince": {
+    "name": "Sea Prince",
+    "category": "cosmic",
+    "effect": [
+      "Makes fish 15% bigger"
+    ],
+    "tips": [
+      "Best paired with the Kings Rod to increase fish size by 45%.",
+      "Worse version of Sea King and Sea Overlord."
+    ]
+  },
+  "tenacity": {
+    "name": "Tenacity",
+    "category": "cosmic",
+    "effect": [
+      "Increases Progress Speed by +20% for every reel snapped in a row (stacks to inf%)"
+    ],
+    "tips": [
+      "Best paired with Rod of The Forgotten Fang."
+    ]
+  },
+  "tryhard": {
+    "name": "Tryhard",
+    "category": "cosmic",
+    "effect": [
+      "Increases Progress Speed by 30%",
+      "& decreases Control by 0.1"
+    ],
+    "tips": [
+      "Best paired with rods with high control such as Brick Rod and Polaris Serenade."
+    ]
+  },
+  "wise": {
+    "name": "Wise",
+    "category": "cosmic",
+    "effect": [
+      "1.2X XP after catching a fish"
+    ],
+    "tips": [
+      "Worse version of Insight and Clever.",
+      "Best paired with Wisdom Rod for players who wish to level up fast.",
+      "Also useful for rods with fast lure speed like Rod Of The Depths."
+    ]
+  },
+  "rage": {
+    "name": "Rage",
+    "category": "twisted",
+    "effect": [
+      "40% chance per fish movement to stab for +8% progress",
+      "-50% Luck",
+      "-20% Resilience"
+    ],
+    "tips": [
+      "Best paired with Cerulean Fang Rod for maximum stab chances or any rod that does not have a stabbing ability but has high luck.",
+      "Useful for increasing stab chances when catch for fish with forced progress speeds.",
+      "This enchantment reduces resilience and thus, stabs fish more."
+    ]
+  },
+  "greed": {
+    "name": "Greed",
+    "category": "twisted",
+    "effect": [
+      "+50% fish size",
+      "-30% Lure Speed",
+      "-5% Progress Speed"
+    ],
+    "tips": [
+      "Best paired with rods that have an already high lure speed and progress speed."
+    ]
+  },
+  "fractured": {
+    "name": "Fractured",
+    "category": "twisted",
+    "effect": [
+      "+50% Progress Speed",
+      "-0.1 Control"
+    ],
+    "tips": [
+      "Better version of Tryhard.",
+      "Best paired with rods that have an already high control like the Brick Rod and Polaris Serenade."
+    ]
+  },
+  "pharaoh's_curse": {
+    "name": "Pharaoh's Curse",
+    "category": "twisted",
+    "effect": [
+      "25% chance to catch Sandy fish"
+    ],
+    "tips": [
+      "Worse version of Quantum"
+    ]
+  },
+  "putrid": {
+    "name": "Putrid",
+    "category": "twisted",
+    "effect": [
+      "-10% Luck"
+    ],
+    "tips": [
+      "It is not recommended to use this enchant as it only has debuffs."
+    ]
+  },
+  "weak": {
+    "name": "Weak",
+    "category": "twisted",
+    "effect": [
+      "-10% Resilience"
+    ],
+    "tips": [
+      "It is not recommended to use this enchant as it only has debuffs."
+    ]
+  },
+  "wobbly": {
+    "name": "Wobbly",
+    "category": "twisted",
+    "effect": [
+      "-0.05 Control"
+    ],
+    "tips": [
+      "It is not recommended to use this enchant as it only has debuffs."
+    ]
+  },
+  "blessed_song": {
+    "name": "Blessed Song",
+    "category": "song_of_the_deep",
+    "effect": [
+      "Grants +40% progress speed when reeling"
+    ],
+    "tips": [
+      "Better version of Steady and Immortal.",
+      "Could be paired with Tempest Rod for +55% Progress Speed, or preferably Challenger's Rod for +60% Progress Speed.",
+      "Best paired with the Ethereal Prism Rod.",
+      "Could be paired with the Great Rod Of Oscar due to its +30% Progress Speed buff adding +70% Progress Speed with this enchant on."
+    ]
+  }
+}

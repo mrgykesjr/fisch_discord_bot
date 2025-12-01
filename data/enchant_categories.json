@@ -1,0 +1,90 @@
+{
+  "regular": {
+    "name": "Regular",
+    "relic": "Enchant Relic",
+    "enchants": [
+      "Swift",
+      "Hasty",
+      "Lucky",
+      "Divine",
+      "Breezed",
+      "Storming",
+      "Controlled",
+      "Resilient",
+      "Quality",
+      "Unbreakable",
+      "Long",
+      "Sea King",
+      "Steady",
+      "Tryhard",
+      "Wise",
+      "Cryogenic",
+      "Abyssal",
+      "Blessed",
+      "Chaotic",
+      "Flashline",
+      "Blood Reckoning",
+      "Momentum",
+      "Mutated",
+      "Scrapper",
+      "Wormhole",
+      "Scavenger",
+      "Noir"
+    ]
+  },
+  "exalted": {
+    "name": "Exalted",
+    "relic": "Exalted Relic",
+    "enchants": [
+      "Immortal",
+      "Mystical",
+      "Sea Overlord",
+      "Anomalous",
+      "Quantum",
+      "Piercing",
+      "Invincible",
+      "Herculean"
+    ]
+  },
+  "cosmic": {
+    "name": "Cosmic",
+    "relic": "Cosmic Relic",
+    "enchants": [
+      "Overclocked",
+      "Tenacity",
+      "Tryhard",
+      "Glittered",
+      "Cryogenic",
+      "Sea Prince",
+      "Wise"
+    ]
+  },
+  "twisted": {
+    "name": "Twisted",
+    "relic": "Twisted Relic",
+    "enchants": [
+      "Rage",
+      "Greed",
+      "Fractured",
+      "Pharaoh's Curse",
+      "Putrid",
+      "Weak",
+      "Wobbly"
+    ]
+  },
+  "song_of_the_deep": {
+    "name": "Song of the Deep",
+    "relic": "Song of the Deep",
+    "enchants": [
+      "Blessed Song"
+    ]
+  },
+  "fischfright_2025": {
+    "name": "FischFright 2025",
+    "relic": "Frightful / Spooky / Eerie Relic",
+    "enchants": [
+      "Eerie",
+      "Frightful"
+    ]
+  }
+}
