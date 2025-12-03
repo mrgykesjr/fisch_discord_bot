@@ -7,7 +7,6 @@ import os
 import time
 from datetime import datetime
 
-# ---------------------------------------------
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -20,17 +19,12 @@ FISH_LIST_URL = BASE_URL + "/wiki/Fish"
 OUTPUT_FILE = "data/bestiary.json"
 LOG_FILE = "fischipedia_scrape_log.txt"
 CONCURRENCY = 50
-# ---------------------------------------------
-
 
 def now_str():
     return datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
 
-
 def clean_paren_spaces(s: str) -> str:
-    # remove any spaces immediately after "(" or before ")"
     return s.replace("( ", "(").replace(" )", ")")
-
 
 def parse_infobox(html, title, url):
     soup = BeautifulSoup(html, "html.parser")
@@ -41,9 +35,8 @@ def parse_infobox(html, title, url):
     if not inf:
         return fish, ["infobox_missing"]
 
-    # basic rows
+    # Extract all datarows
     datarows = inf.find_all("div", class_="infobox-datarow")
-
     for row in datarows:
         heading = row.find("p", class_="data-heading")
         content = row.find("p", class_="data-content") or row.find("ul", class_="data-content")
@@ -52,16 +45,17 @@ def parse_infobox(html, title, url):
         key = heading.get_text(strip=True).lower()
         val = content.get_text(" ", strip=True)
         val = clean_paren_spaces(val)
+        # store original heading name as key
         fish[key] = val
 
-    # C$/kg
+    # C$/kg field
     ckg = inf.find("p", class_="data-heading", string=lambda s: s and "C$/kg" in s)
     if ckg:
         node = ckg.find_next("p", class_="data-content")
         if node:
             fish["value_per_kg_base"] = clean_paren_spaces(node.get_text(strip=True))
 
-    # tabber weights & values
+    # Tabber (weight/value tables)
     tabber = inf.find("div", class_="tabber")
     if tabber:
         panels = tabber.find_all("article", class_="tabber__panel")
@@ -73,29 +67,23 @@ def parse_infobox(html, title, url):
                 if not heading or not content:
                     continue
                 h = heading.get_text(strip=True).lower()
-                v = content.get_text(strip=True)
-                v = clean_paren_spaces(v).replace("kg", "").replace("C$", "").strip()
+                v = clean_paren_spaces(content.get_text(strip=True)).replace("kg", "").replace("C$", "").strip()
                 fish[h] = v
 
     return fish, missing
 
-
 async def fetch_fish(session, title):
     url_title = title.replace(" ", "_")
     url = f"{BASE_URL}/wiki/{url_title}"
-
     try:
         async with session.get(url, headers=HEADERS, timeout=20) as resp:
             html = await resp.text()
     except Exception:
         return title, {"name": title, "url": url}, ["http_error"]
-
     if resp.status != 200:
         return title, {"name": title, "url": url}, [f"http_{resp.status}"]
-
     fish, missing = parse_infobox(html, title, url)
     return title, fish, missing
-
 
 async def get_all_titles(session):
     async with session.get(FISH_LIST_URL, headers=HEADERS) as resp:
@@ -107,15 +95,12 @@ async def get_all_titles(session):
         if not href.startswith("/wiki/"):
             continue
         raw = href.replace("/wiki/", "")
-        if ":" in raw:
-            continue
-        if raw.lower() in ("main_page", "fish"):
+        if ":" in raw or raw.lower() in ("main_page", "fish"):
             continue
         if "%" in raw:
             continue
         titles.append(raw.replace("_", " "))
     return sorted(set(titles))
-
 
 async def scrape_all(limit=None):
     async with aiohttp.ClientSession() as session:
@@ -149,10 +134,7 @@ async def scrape_all(limit=None):
         json.dump(results, f, indent=2, ensure_ascii=False)
     with open(LOG_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(log_lines))
-
     print(f"\n[{now_str()}] Saved {len(results)} → {OUTPUT_FILE}")
 
-
 if __name__ == "__main__":
-    import aiohttp
-    asyncio.run(scrape_all(limit=None))  
+    asyncio.run(scrape_all(limit=None))
