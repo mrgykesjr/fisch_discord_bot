@@ -1,0 +1,18 @@
+how to control bot in aws:
+
+cmd prompt:
+
+cd C:/Users/set/Desktop
+ssh -i fisch.pem ubuntu@18.223.134.8
+cd fisch_discord_bot
+git pull
+
+
+how to get to screen
+
+screen -r //if there is a resumable session
+
+screen -s bot
+source venv/bin/activate
+python3 bot.py
+

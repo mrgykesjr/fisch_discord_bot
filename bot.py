@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import json
 import discord
 from discord.ext import commands
@@ -18,6 +19,7 @@ def load_json(path):
     try:
         with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
+        # except: pass
     except FileNotFoundError:
         return {}
 
@@ -33,7 +35,6 @@ except Exception as e:
     print("WARNING: could not load enchant_categories.json:", e)
     categories_data = {}
 
-# NEW: load fish / bestiary data
 try:
     bestiary_data = load_json("data/bestiary.json")
 except Exception as e:
@@ -141,7 +142,6 @@ async def category_autocomplete(interaction: discord.Interaction, current: str):
     return choices[:25]
 
 # --- /bestiary command ---
-
 @bot.tree.command(name="bestiary", description="Get info about a Fisch fish.")
 @app_commands.describe(name="Name of the fish (case-insensitive)")
 async def bestiary(interaction: discord.Interaction, name: str):
@@ -153,8 +153,13 @@ async def bestiary(interaction: discord.Interaction, name: str):
         )
         return
 
+    # Build link to Fischipedia
+    wiki_name = entry.get("name", name).replace(" ", "_")
+    wiki_url = f"https://fischipedia.org/wiki/{wiki_name}"
+
     embed = discord.Embed(
-        title=f"Fish: {entry.get('name', name.title())}",
+        title=entry.get("name", name.title()), 
+        url=wiki_url,
         color=discord.Color.teal()
     )
 
@@ -163,11 +168,17 @@ async def bestiary(interaction: discord.Interaction, name: str):
     if rarity:
         embed.add_field(name="Rarity", value=rarity, inline=False)
 
-    # Location / Bait
+    # Location & Resilience
     location = entry.get("location")
-    bait = entry.get("bait")
     if location:
         embed.add_field(name="Location", value=location, inline=False)
+
+    resilience = entry.get("resilience")
+    if resilience:
+        embed.add_field(name="Resilience", value=resilience, inline=False)
+
+    # Preferred Bait
+    bait = entry.get("bait")
     if bait:
         embed.add_field(name="Preferred Bait", value=bait, inline=False)
 
@@ -189,33 +200,32 @@ async def bestiary(interaction: discord.Interaction, name: str):
             inline=False
         )
 
-    # Weight fields (support both min_weight/avg_weight/max_weight
-    # and lowest_kg/average_kg/highest_kg just in case)
+    # Weight fields
     min_w = entry.get("min_weight") or entry.get("lowest_kg")
     avg_w = entry.get("avg_weight") or entry.get("average_kg")
     max_w = entry.get("max_weight") or entry.get("highest_kg")
     if min_w or avg_w or max_w:
         weight_lines = []
         if min_w:
-            weight_lines.append(f"Min: {min_w}")
+            weight_lines.append(f"Min: {min_w} kg")
         if avg_w:
-            weight_lines.append(f"Avg: {avg_w}")
+            weight_lines.append(f"Avg: {avg_w} kg")
         if max_w:
-            weight_lines.append(f"Max: {max_w}")
+            weight_lines.append(f"Max: {max_w} kg")
         embed.add_field(
-            name="Weight (Kg, Base)",
+            name="Weight (kg, base)",
             value="\n".join(weight_lines),
             inline=False
         )
 
-    # Value fields (support both new and old key names)
+    # Value fields
     value_per_kg = entry.get("value_per_kg_base") or entry.get("C_kg")
     base_value_c = entry.get("base_value_c") or entry.get("average_C")
     value_lines = []
     if value_per_kg:
-        value_lines.append(f"C$/Kg (Base): {value_per_kg}")
+        value_lines.append(f"C$/kg (base): {value_per_kg}")
     if base_value_c:
-        value_lines.append(f"Average C$ (Base): {base_value_c}")
+        value_lines.append(f"Average C$ (base): {base_value_c}")
     if value_lines:
         embed.add_field(
             name="Value",
@@ -224,7 +234,6 @@ async def bestiary(interaction: discord.Interaction, name: str):
         )
 
     await interaction.response.send_message(embed=embed)
-
 
 @bestiary.autocomplete("name")
 async def bestiary_autocomplete(interaction: discord.Interaction, current: str):
