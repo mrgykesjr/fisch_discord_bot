@@ -1,140 +1,125 @@
 #!/usr/bin/env python3
-import asyncio
-import aiohttp
-from bs4 import BeautifulSoup
 import json
+import discord
+from discord.ext import commands
+from discord import app_commands
 import os
-import time
-from datetime import datetime
 
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/120.0.0.0 Safari/537.36"
-    )
-}
-BASE_URL = "https://fischipedia.org"
-FISH_LIST_URL = BASE_URL + "/wiki/Fish"
-OUTPUT_FILE = "data/bestiary.json"
-LOG_FILE = "fischipedia_scrape_log.txt"
-CONCURRENCY = 50
+TOKEN = os.getenv("DISCORD_TOKEN")
+if TOKEN is None:
+    raise ValueError("DISCORD_TOKEN environment variable not found.")
+GUILD_ID = None
 
-def now_str():
-    return datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
+intents = discord.Intents.default()
+bot = commands.Bot(command_prefix="!", intents=intents)
 
-def clean_paren_spaces(s: str) -> str:
-    return s.replace("( ", "(").replace(" )", ")")
-
-def parse_infobox(html, title, url):
-    soup = BeautifulSoup(html, "html.parser")
-    fish = {"name": title, "url": url}
-    missing = []
-
-    inf = soup.find("div", class_="infobox")
-    if not inf:
-        return fish, ["infobox_missing"]
-
-    # Extract all datarows
-    datarows = inf.find_all("div", class_="infobox-datarow")
-    for row in datarows:
-        heading = row.find("p", class_="data-heading")
-        content = row.find("p", class_="data-content") or row.find("ul", class_="data-content")
-        if not heading or not content:
-            continue
-        key = heading.get_text(strip=True).lower()
-        val = content.get_text(" ", strip=True)
-        val = clean_paren_spaces(val)
-        # store original heading name as key
-        fish[key] = val
-
-    # C$/kg field
-    ckg = inf.find("p", class_="data-heading", string=lambda s: s and "C$/kg" in s)
-    if ckg:
-        node = ckg.find_next("p", class_="data-content")
-        if node:
-            fish["value_per_kg_base"] = clean_paren_spaces(node.get_text(strip=True))
-
-    # Tabber (weight/value tables)
-    tabber = inf.find("div", class_="tabber")
-    if tabber:
-        panels = tabber.find_all("article", class_="tabber__panel")
-        for p in panels:
-            rows = p.find_all("div", class_="infobox-datarow")
-            for r in rows:
-                heading = r.find("p", class_="data-heading")
-                content = r.find("p", class_="data-content")
-                if not heading or not content:
-                    continue
-                h = heading.get_text(strip=True).lower()
-                v = clean_paren_spaces(content.get_text(strip=True)).replace("kg", "").replace("C$", "").strip()
-                fish[h] = v
-
-    return fish, missing
-
-async def fetch_fish(session, title):
-    url_title = title.replace(" ", "_")
-    url = f"{BASE_URL}/wiki/{url_title}"
+def load_json(path):
     try:
-        async with session.get(url, headers=HEADERS, timeout=20) as resp:
-            html = await resp.text()
-    except Exception:
-        return title, {"name": title, "url": url}, ["http_error"]
-    if resp.status != 200:
-        return title, {"name": title, "url": url}, [f"http_{resp.status}"]
-    fish, missing = parse_infobox(html, title, url)
-    return title, fish, missing
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return {}
 
-async def get_all_titles(session):
-    async with session.get(FISH_LIST_URL, headers=HEADERS) as resp:
-        text = await resp.text()
-    soup = BeautifulSoup(text, "html.parser")
-    titles = []
-    for link in soup.select("a[href^='/wiki/']"):
-        href = link.get("href", "")
-        if not href.startswith("/wiki/"):
-            continue
-        raw = href.replace("/wiki/", "")
-        if ":" in raw or raw.lower() in ("main_page", "fish"):
-            continue
-        if "%" in raw:
-            continue
-        titles.append(raw.replace("_", " "))
-    return sorted(set(titles))
+bestiary_data = load_json("data/bestiary.json")
 
-async def scrape_all(limit=None):
-    async with aiohttp.ClientSession() as session:
-        titles = await get_all_titles(session)
-        if limit:
-            titles = titles[:limit]
-        total = len(titles)
-        results = {}
-        log_lines = []
-        sem = asyncio.Semaphore(CONCURRENCY)
-        start = time.time()
+def find_fish(key: str):
+    return bestiary_data.get(key.lower().strip())
 
-        async def sem_task(idx, t):
-            async with sem:
-                title, fish, missing = await fetch_fish(session, t)
-                elapsed = time.time() - start
-                done = idx
-                remain = total - done
-                rate = done / elapsed if elapsed > 0 else 0
-                eta = remain / rate if rate > 0 else float('inf')
-                print(f"[{now_str()}] [{done}/{total}] {title} — missing: {missing} | {rate:.1f} items/s | ETA: {eta/60:.1f} min")
-                key = title.lower().replace(" ", "_").replace("'", "")
-                results[key] = fish
-                log_lines.append(f"[{done}/{total}] {title} — missing: {missing}")
+@bot.tree.command(name="bestiary", description="Get info about a Fisch fish.")
+@app_commands.describe(name="Name of the fish (case-insensitive)")
+async def bestiary(interaction: discord.Interaction, name: str):
+    entry = find_fish(name)
+    if not entry:
+        await interaction.response.send_message(
+            f"❌ Could not find a fish named **{name}**.",
+            ephemeral=True
+        )
+        return
 
-        tasks = [asyncio.create_task(sem_task(i+1, t)) for i, t in enumerate(titles)]
-        await asyncio.gather(*tasks)
+    wiki_name = entry.get("name", name).replace(" ", "_")
+    wiki_url = f"https://fischipedia.org/wiki/{wiki_name}"
 
-    os.makedirs(os.path.dirname(OUTPUT_FILE) or ".", exist_ok=True)
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(results, f, indent=2, ensure_ascii=False)
-    with open(LOG_FILE, "w", encoding="utf-8") as f:
-        f.write("\n".join(log_lines))
-    print(f"\n[{now_str()}] Saved {len(results)} → {OUTPUT_FILE}")
+    embed = discord.Embed(
+        title=entry.get("name", name.title()),
+        url=wiki_url,
+        color=discord.Color.teal()
+    )
 
-if __name__ == "__main__":
-    asyncio.run(scrape_all(limit=None))
+    # Rarity
+    if entry.get("rarity"):
+        embed.add_field(name="Rarity", value=entry["rarity"], inline=False)
+
+    # Location
+    if entry.get("location"):
+        embed.add_field(name="Location", value=entry["location"], inline=False)
+
+    # Resilience
+    if entry.get("resilience"):
+        embed.add_field(name="Resilience", value=entry["resilience"], inline=False)
+
+    # Progress Speed
+    ps = entry.get("progress_speed") or entry.get("progress speed")
+    if ps:
+        embed.add_field(name="Progress Speed", value=ps, inline=False)
+
+    # Preferred Bait
+    if entry.get("bait"):
+        embed.add_field(name="Preferred Bait", value=entry["bait"], inline=False)
+
+    # Conditions
+    conds = []
+    if entry.get("time"):
+        conds.append(f"**Time:** {entry['time']}")
+    if entry.get("weather"):
+        conds.append(f"**Weather:** {entry['weather']}")
+    if entry.get("season"):
+        conds.append(f"**Season:** {entry['season']}")
+    if conds:
+        embed.add_field(name="Conditions", value="\n".join(conds), inline=False)
+
+    # Weight (kg) — include min/avg/max if present
+    w_lines = []
+    if entry.get("min_weight"):
+        w_lines.append(f"Min: {entry['min_weight']} kg")
+    if entry.get("avg_weight"):
+        w_lines.append(f"Avg: {entry['avg_weight']} kg")
+    if entry.get("max_weight"):
+        w_lines.append(f"Max: {entry['max_weight']} kg")
+    if w_lines:
+        embed.add_field(name="Weight (kg, base)", value="\n".join(w_lines), inline=False)
+
+    # Value
+    v_lines = []
+    if entry.get("value_per_kg_base"):
+        v_lines.append(f"C$/kg (base): {entry['value_per_kg_base']}")
+    if entry.get("base_value_c"):
+        v_lines.append(f"Average C$ (base): {entry['base_value_c']}")
+    if v_lines:
+        embed.add_field(name="Value", value="\n".join(v_lines), inline=False)
+
+    await interaction.response.send_message(embed=embed)
+
+@bestiary.autocomplete("name")
+async def bestiary_autocomplete(interaction: discord.Interaction, current: str):
+    lower = current.lower()
+    choices = []
+    for key, data in bestiary_data.items():
+        display = data.get("name", key)
+        if lower in key.lower() or lower in display.lower():
+            choices.append(app_commands.Choice(name=display, value=key))
+    return choices[:25]
+
+@bot.event
+async def on_ready():
+    print(f"Logged in as {bot.user} (ID: {bot.user.id})")
+    try:
+        if GUILD_ID:
+            await bot.tree.sync(guild=discord.Object(id=GUILD_ID))
+            print("Slash commands synced to guild.")
+        else:
+            await bot.tree.sync()
+            print("Slash commands synced globally.")
+    except Exception as e:
+        print("Error syncing commands:", e)
+
+bot.run(TOKEN)
