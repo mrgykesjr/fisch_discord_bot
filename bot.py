@@ -46,16 +46,19 @@ async def bestiary(interaction: discord.Interaction, name: str):
     )
 
     # Rarity
-    if entry.get("rarity"):
-        embed.add_field(name="Rarity", value=entry["rarity"], inline=False)
+    rarity = entry.get("rarity")
+    if rarity:
+        embed.add_field(name="Rarity", value=rarity, inline=False)
 
     # Location
-    if entry.get("location"):
-        embed.add_field(name="Location", value=entry["location"], inline=False)
+    location = entry.get("location")
+    if location:
+        embed.add_field(name="Location", value=location, inline=False)
 
     # Resilience
-    if entry.get("resilience"):
-        embed.add_field(name="Resilience", value=entry["resilience"], inline=False)
+    resilience = entry.get("resilience")
+    if resilience:
+        embed.add_field(name="Resilience", value=resilience, inline=False)
 
     # Progress Speed
     ps = entry.get("progress_speed") or entry.get("progress speed")
@@ -63,37 +66,50 @@ async def bestiary(interaction: discord.Interaction, name: str):
         embed.add_field(name="Progress Speed", value=ps, inline=False)
 
     # Preferred Bait
-    if entry.get("bait"):
-        embed.add_field(name="Preferred Bait", value=entry["bait"], inline=False)
+    bait = entry.get("bait")
+    if bait:
+        embed.add_field(name="Preferred Bait", value=bait, inline=False)
 
     # Conditions
     conds = []
-    if entry.get("time"):
-        conds.append(f"**Time:** {entry['time']}")
-    if entry.get("weather"):
-        conds.append(f"**Weather:** {entry['weather']}")
-    if entry.get("season"):
-        conds.append(f"**Season:** {entry['season']}")
+    for key in ("time", "weather", "season"):
+        if entry.get(key):
+            conds.append(f"**{key.title()}:** {entry[key]}")
     if conds:
         embed.add_field(name="Conditions", value="\n".join(conds), inline=False)
 
-    # Weight (kg) — include min/avg/max if present
+    # Weight (kg) — handle both naming conventions
     w_lines = []
+    # old-style
     if entry.get("min_weight"):
         w_lines.append(f"Min: {entry['min_weight']} kg")
     if entry.get("avg_weight"):
         w_lines.append(f"Avg: {entry['avg_weight']} kg")
     if entry.get("max_weight"):
         w_lines.append(f"Max: {entry['max_weight']} kg")
+    # wiki-style
+    if entry.get("min. kg"):
+        w_lines.append(f"Min: {entry['min. kg']} kg")
+    if entry.get("avg. kg"):
+        w_lines.append(f"Avg: {entry['avg. kg']} kg")
+    if entry.get("base kg"):
+        w_lines.append(f"Base: {entry['base kg']} kg")
+    if entry.get("max. kg"):
+        w_lines.append(f"Max: {entry['max. kg']} kg")
+
     if w_lines:
-        embed.add_field(name="Weight (kg, base)", value="\n".join(w_lines), inline=False)
+        embed.add_field(name="Weight (kg)", value="\n".join(w_lines), inline=False)
 
     # Value
     v_lines = []
     if entry.get("value_per_kg_base"):
         v_lines.append(f"C$/kg (base): {entry['value_per_kg_base']}")
-    if entry.get("base_value_c"):
-        v_lines.append(f"Average C$ (base): {entry['base_value_c']}")
+    if entry.get("base c$"):
+        v_lines.append(f"Base C$: {entry['base c$']}")
+    if entry.get("avg. c$"):
+        v_lines.append(f"Avg C$: {entry['avg. c$']}")
+    if entry.get("max. c$"):
+        v_lines.append(f"Max C$: {entry['max. c$']}")
     if v_lines:
         embed.add_field(name="Value", value="\n".join(v_lines), inline=False)
 
