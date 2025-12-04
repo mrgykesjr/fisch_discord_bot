@@ -4,6 +4,7 @@ import discord
 from discord.ext import commands
 from discord import app_commands
 import os
+import urllib.parse
 
 TOKEN = os.getenv("DISCORD_TOKEN")
 if TOKEN is None:
@@ -14,55 +15,107 @@ GUILD_ID = None
 intents = discord.Intents.default()
 bot = commands.Bot(command_prefix="!", intents=intents)
 
+
+# ---------------------------------------------------------
+# JSON LOADER
+# ---------------------------------------------------------
 def load_json(path):
     try:
         with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError):
+    except Exception:
         return {}
 
-# Load ALL data sets
+
+# Load JSON files
 bestiary_data = load_json("data/bestiary.json")
 rods_data = load_json("data/rods.json")
 enchants_data = load_json("data/enchants.json")
 categories_data = load_json("data/enchant_categories.json")
 
-# ---------------------------------------------------------
-# FISH
-# ---------------------------------------------------------
-def find_fish(key: str):
-    return bestiary_data.get(key.lower().strip())
 
+# ---------------------------------------------------------
+# NORMALIZATION UTILITIES
+# ---------------------------------------------------------
+def normalize(s: str) -> str:
+    """Normalize for fuzzy matching."""
+    if not isinstance(s, str):
+        return ""
+    s = urllib.parse.unquote(s)
+    s = s.replace("’", "'")
+    s = s.replace("`", "'")
+    return s.lower().strip()
+
+
+def match_entry(name: str, dataset: dict, name_field="name"):
+    """Fuzzy match against both JSON keys and their 'name' field."""
+    target = normalize(name)
+
+    # direct key match
+    for key, data in dataset.items():
+        if normalize(key) == target:
+            return data
+
+    # direct name-field match
+    for key, data in dataset.items():
+        disp = data.get(name_field, "")
+        if normalize(disp) == target:
+            return data
+
+    # single partial match fallback
+    candidates = []
+    for key, data in dataset.items():
+        if target in normalize(key) or target in normalize(data.get(name_field, "")):
+            candidates.append(data)
+
+    if len(candidates) == 1:
+        return candidates[0]
+
+    return None
+
+
+# Clean field label for embed titles
+def clean_label(label: str) -> str:
+    label = label.replace("_", " ")
+    label = label.title()
+    return label
+
+
+# ---------------------------------------------------------
+# BESTIARY
+# ---------------------------------------------------------
 @bot.tree.command(name="bestiary", description="Get info about a Fisch fish.")
-@app_commands.describe(name="Name of the fish (case-insensitive)")
-async def bestiary(interaction: discord.Interaction, name: str):
-    entry = find_fish(name)
+@app_commands.describe(name="Name of the fish")
+async def bestiary(interaction, name: str):
+
+    entry = match_entry(name, bestiary_data)
     if not entry:
         await interaction.response.send_message(
-            f"❌ Could not find a fish named **{name}**.", ephemeral=True
+            f"❌ Could not find a fish named **{name}**.",
+            ephemeral=True
         )
         return
 
     wiki_name = entry.get("name", name).replace(" ", "_")
-    wiki_url = f"https://fischipedia.org/wiki/{wiki_name}"
-
     embed = discord.Embed(
         title=entry.get("name", name.title()),
-        url=wiki_url,
+        url=f"https://fischipedia.org/wiki/{wiki_name}",
         color=discord.Color.teal()
     )
 
+    # static fields
     for key, label in [
         ("rarity", "Rarity"),
         ("location", "Location"),
         ("resilience", "Resilience"),
         ("progress_speed", "Progress Speed"),
         ("progress speed", "Progress Speed"),
-        ("bait", "Preferred Bait"),
+        ("bait", "Preferred Bait")
     ]:
         if entry.get(key):
             embed.add_field(name=label, value=entry[key], inline=False)
 
+    # conditions
     conds = []
     for key in ("time", "weather", "season"):
         if entry.get(key):
@@ -70,6 +123,7 @@ async def bestiary(interaction: discord.Interaction, name: str):
     if conds:
         embed.add_field(name="Conditions", value="\n".join(conds), inline=False)
 
+    # weights
     w_lines = []
     for key, label in [
         ("min_weight", "Min"),
@@ -85,6 +139,7 @@ async def bestiary(interaction: discord.Interaction, name: str):
     if w_lines:
         embed.add_field(name="Weight (kg)", value="\n".join(w_lines), inline=False)
 
+    # value
     v_lines = []
     for key, label in [
         ("value_per_kg_base", "C$/kg (base)"),
@@ -99,75 +154,85 @@ async def bestiary(interaction: discord.Interaction, name: str):
 
     await interaction.response.send_message(embed=embed)
 
+
 @bestiary.autocomplete("name")
-async def bestiary_autocomplete(interaction, current: str):
-    lower = current.lower()
-    return [
-        app_commands.Choice(name=data.get("name", key), value=key)
-        for key, data in bestiary_data.items()
-        if lower in key.lower() or lower in data.get("name", "").lower()
-    ][:25]
+async def bestiary_autocomplete(interaction, current):
+    target = normalize(current)
+    results = []
+    for key, data in bestiary_data.items():
+        disp = data.get("name", key)
+        if target in normalize(key) or target in normalize(disp):
+            results.append(app_commands.Choice(name=disp, value=key))
+    return results[:25]
+
 
 # ---------------------------------------------------------
-# RODS
+# ROD — FULL DYNAMIC DISPLAY
 # ---------------------------------------------------------
-def find_rod(key: str):
-    return rods_data.get(key.lower().strip())
-
 @bot.tree.command(name="rod", description="Get info about a Fisch fishing rod.")
-@app_commands.describe(name="Name of the rod (case-insensitive)")
-async def rod(interaction: discord.Interaction, name: str):
-    entry = find_rod(name)
+@app_commands.describe(name="Name of the rod")
+async def rod(interaction, name: str):
+
+    entry = match_entry(name, rods_data)
     if not entry:
         await interaction.response.send_message(
-            f"❌ Could not find a rod named **{name}**.", ephemeral=True
+            f"❌ Could not find a rod named **{name}**.",
+            ephemeral=True
         )
         return
 
+    title = entry.get("name", name.title())
     embed = discord.Embed(
-        title=entry.get("name", name),
-        url=entry.get("url"),
+        title=title,
+        url=entry.get("url"),  # keep clickable title
         color=discord.Color.green()
     )
 
-    for key, label in [
-        ("obtained_from", "Obtained From"),
-        ("price", "Cost / Price"),
-        ("lure", "Lure"),
-        ("luck", "Luck"),
-        ("control", "Control"),
-        ("resilience", "Resilience"),
-        ("max_weight", "Max Weight (kg)"),
-        ("ability", "Ability / Passive"),
-        ("recommended_enchants", "Recommended Enchants")
-    ]:
-        if key in entry:
-            val = entry[key]
-            if isinstance(val, list):
-                val = "\n".join(f"• {v}" for v in val)
-            embed.add_field(name=label, value=val, inline=False)
+    # dynamic: iterate through JSON fields in the EXACT order they appear
+    for key, value in entry.items():
+
+        # skip internal display name
+        if key == "name":
+            continue
+
+        # *** THIS IS THE ONLY CHANGE YOU ASKED FOR ***
+        if key == "url":  
+            continue  # do not add as its own field
+
+        label = clean_label(key)
+
+        if isinstance(value, list):
+            formatted = "\n".join(f"• {v}" for v in value)
+            embed.add_field(name=label, value=formatted, inline=False)
+        else:
+            embed.add_field(name=label, value=str(value), inline=False)
 
     await interaction.response.send_message(embed=embed)
 
+
 @rod.autocomplete("name")
-async def rod_autocomplete(interaction, current: str):
-    lower = current.lower()
-    return [
-        app_commands.Choice(name=data.get("name", key), value=key)
-        for key, data in rods_data.items()
-        if lower in key.lower() or lower in data.get("name", "").lower()
-    ][:25]
+async def rod_autocomplete(interaction, current):
+    target = normalize(current)
+    results = []
+    for key, data in rods_data.items():
+        disp = data.get("name", key)
+        if target in normalize(key) or target in normalize(disp):
+            results.append(app_commands.Choice(name=disp, value=key))
+    return results[:25]
+
 
 # ---------------------------------------------------------
-# ENCHANTS
+# ENCHANT
 # ---------------------------------------------------------
-@bot.tree.command(name="enchants", description="Get info about a Fisch enchantment.")
+@bot.tree.command(name="enchant", description="Get info about a Fisch enchantment.")
 @app_commands.describe(name="Name of the enchantment")
-async def enchants(interaction: discord.Interaction, name: str):
-    entry = enchants_data.get(name.lower().strip())
+async def enchant(interaction, name: str):
+
+    entry = match_entry(name, enchants_data)
     if not entry:
         await interaction.response.send_message(
-            f"❌ Could not find an enchant named **{name}**.", ephemeral=True
+            f"❌ Could not find an enchant named **{name}**.",
+            ephemeral=True
         )
         return
 
@@ -176,41 +241,43 @@ async def enchants(interaction: discord.Interaction, name: str):
         color=discord.Color.blue()
     )
 
-    for key, label in [
-        ("description", "Description"),
-        ("max_level", "Max Level"),
-        ("applies_to", "Applies To"),
-        ("conflicts", "Conflicts With"),
-        ("rarity", "Rarity"),
-        ("category", "Category")
-    ]:
-        if key in entry:
-            val = entry[key]
-            if isinstance(val, list):
-                val = "\n".join(f"• {v}" for v in val)
-            embed.add_field(name=label, value=val, inline=False)
+    if entry.get("category"):
+        embed.add_field(name="Category", value=entry["category"].title(), inline=False)
+
+    if entry.get("effect"):
+        effects = "\n".join(f"• {line}" for line in entry["effect"])
+        embed.add_field(name="Effect", value=effects, inline=False)
+
+    if entry.get("tips"):
+        tips = "\n".join(f"• {line}" for line in entry["tips"])
+        embed.add_field(name="Tips", value=tips, inline=False)
 
     await interaction.response.send_message(embed=embed)
 
-@enchants.autocomplete("name")
-async def enchants_autocomplete(interaction, current: str):
-    lower = current.lower()
-    return [
-        app_commands.Choice(name=entry.get("name", key), value=key)
-        for key, entry in enchants_data.items()
-        if lower in key.lower() or lower in entry.get("name", "").lower()
-    ][:25]
+
+@enchant.autocomplete("name")
+async def enchant_autocomplete(interaction, current):
+    target = normalize(current)
+    res = []
+    for key, data in enchants_data.items():
+        disp = data.get("name", key)
+        if target in normalize(key) or target in normalize(disp):
+            res.append(app_commands.Choice(name=disp, value=key))
+    return res[:25]
+
 
 # ---------------------------------------------------------
 # ENCHANT CATEGORY
 # ---------------------------------------------------------
 @bot.tree.command(name="enchantcategory", description="Look up an enchantment category.")
-@app_commands.describe(category="Name of the enchantment category")
-async def enchantcategory(interaction: discord.Interaction, category: str):
-    entry = categories_data.get(category.lower().strip())
+@app_commands.describe(category="The category name")
+async def enchantcategory(interaction, category: str):
+
+    entry = match_entry(category, categories_data)
     if not entry:
         await interaction.response.send_message(
-            f"❌ No category found named **{category}**.", ephemeral=True
+            f"❌ No category found named **{category}**.",
+            ephemeral=True
         )
         return
 
@@ -219,20 +286,26 @@ async def enchantcategory(interaction: discord.Interaction, category: str):
         color=discord.Color.orange()
     )
 
-    if "enchants" in entry:
+    if entry.get("relic"):
+        embed.add_field(name="Relic Type", value=entry["relic"], inline=False)
+
+    if entry.get("enchants"):
         ench_list = "\n".join(f"• {e}" for e in entry["enchants"])
         embed.add_field(name="Enchantments", value=ench_list, inline=False)
 
     await interaction.response.send_message(embed=embed)
 
+
 @enchantcategory.autocomplete("category")
-async def enchantcategory_autocomplete(interaction, current: str):
-    lower = current.lower()
-    return [
-        app_commands.Choice(name=entry.get("name", key), value=key)
-        for key, entry in categories_data.items()
-        if lower in key.lower() or lower in entry.get("name", "").lower()
-    ][:25]
+async def enchantcategory_autocomplete(interaction, current):
+    target = normalize(current)
+    res = []
+    for key, data in categories_data.items():
+        disp = data.get("name", key)
+        if target in normalize(key) or target in normalize(disp):
+            res.append(app_commands.Choice(name=disp, value=key))
+    return res[:25]
+
 
 # ---------------------------------------------------------
 # READY EVENT
@@ -242,12 +315,14 @@ async def on_ready():
     print(f"Logged in as {bot.user} (ID: {bot.user.id})")
     try:
         if GUILD_ID:
-            await bot.tree.sync(guild=discord.Object(id=GUILD_ID))
-            print("Slash commands synced to guild.")
+            guild = discord.Object(id=GUILD_ID)
+            commands_synced = await bot.tree.sync(guild=guild)
+            print(f"✅ Synced {len(commands_synced)} commands to guild {GUILD_ID}.")
         else:
-            await bot.tree.sync()
-            print("Slash commands synced globally.")
+            commands_synced = await bot.tree.sync()
+            print(f"✅ Synced {len(commands_synced)} global commands.")
     except Exception as e:
         print("Error syncing commands:", e)
+
 
 bot.run(TOKEN)
