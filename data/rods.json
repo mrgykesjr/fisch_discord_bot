@@ -1,0 +1,2346 @@
+{
+  "Abyssal Specter Rod": {
+    "name": "Abyssal Specter Rod",
+    "url": "https://fischipedia.org/wiki/Abyssal_Specter_Rod",
+    "lure speed": "60%",
+    "luck": "90%",
+    "control": "0.3",
+    "resilience": "70%",
+    "max kg": "infkg",
+    "line distance": "80m",
+    "recommended_enchants": [
+      "Momentum to gradually increase Lure Speed, Resilience, and Progress Speed.",
+      "Hasty to drastically increase Lure Speed.",
+      "Sea Overlord to drastically increase Fish Size. Sea Prince if Exalted Relic is not available."
+    ]
+  },
+  "Adventurer%27s Rod": {
+    "name": "Adventurer%27s Rod",
+    "url": "https://fischipedia.org/wiki/Adventurer%27s_Rod",
+    "lure speed": "60%",
+    "luck": "50%",
+    "control": "0",
+    "resilience": "15%",
+    "max kg": "104kg",
+    "line distance": "19m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Hasty to drastically increase Lure Speed .",
+      "Mutated to synergize with the rod's passive."
+    ]
+  },
+  "Antler Rod": {
+    "name": "Antler Rod",
+    "url": "https://fischipedia.org/wiki/Antler_Rod",
+    "lure speed": "25%",
+    "luck": "45%",
+    "control": "0.02",
+    "resilience": "-4%",
+    "max kg": "200kg",
+    "line distance": "24m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Hasty to drastically increase Lure Speed.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Arctic Rod": {
+    "name": "Arctic Rod",
+    "url": "https://fischipedia.org/wiki/Arctic_Rod",
+    "lure speed": "25%",
+    "luck": "45%",
+    "control": "0.06",
+    "resilience": "15%",
+    "max kg": "7,500kg",
+    "line distance": "70m",
+    "recommended_enchants": [
+      "Divine to increase Lure Speed, Luck, and Resilience.",
+      "Hasty to drastically increase Lure Speed."
+    ]
+  },
+  "Astral Rod": {
+    "name": "Astral Rod",
+    "url": "https://fischipedia.org/wiki/Astral_Rod",
+    "lure speed": "10%",
+    "luck": "30%",
+    "control": "0.05",
+    "resilience": "5%",
+    "max kg": "1,000kg",
+    "line distance": "20m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Hasty to drastically increase Lure Speed.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Astralhook Rod": {
+    "name": "Astralhook Rod",
+    "url": "https://fischipedia.org/wiki/Astralhook_Rod",
+    "lure speed": "100%",
+    "luck": "200%",
+    "control": "0.2",
+    "resilience": "20%",
+    "max kg": "infkg",
+    "line distance": "150m",
+    "recommended_enchants": [
+      "Rage for a powerful stab passive ability. Piercing or Chaotic if Twisted Relic is not available.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Auric Rod": {
+    "name": "Auric Rod",
+    "url": "https://fischipedia.org/wiki/Auric_Rod",
+    "lure speed": "45%",
+    "luck": "45%",
+    "control": "0.05",
+    "resilience": "20%",
+    "max kg": "25,000kg",
+    "line distance": "20m",
+    "recommended_enchants": [
+      "Divine to increase Lure Speed, Luck, and Resilience.",
+      "Hasty to drastically increase Lure Speed."
+    ]
+  },
+  "Aurora Rod": {
+    "name": "Aurora Rod",
+    "url": "https://fischipedia.org/wiki/Aurora_Rod",
+    "lure speed": "45%",
+    "luck": "60%",
+    "control": "0.06",
+    "resilience": "16%",
+    "max kg": "6,000kg",
+    "line distance": "20m",
+    "recommended_enchants": [
+      "Hasty to increase Lure Speed.",
+      "Divine if Mastery Passive is unlocked, to increase Lure Speed, Luck, and Resilience.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Avalanche Rod": {
+    "name": "Avalanche Rod",
+    "url": "https://fischipedia.org/wiki/Avalanche_Rod",
+    "lure speed": "40%",
+    "luck": "68%",
+    "control": "0.15",
+    "resilience": "10%",
+    "max kg": "65,000kg",
+    "line distance": "70m",
+    "recommended_enchants": [
+      "Divine to increase Lure Speed, Luck, and Resilience.",
+      "Momentum to gradually increase Lure Speed, Resilience, and Progress Speed."
+    ]
+  },
+  "Axe of Rhoads": {
+    "name": "Axe of Rhoads",
+    "url": "https://fischipedia.org/wiki/Axe_of_Rhoads",
+    "lure speed": "70%",
+    "luck": "145%",
+    "control": "0.25",
+    "resilience": "65%",
+    "max kg": "20,000kg",
+    "line distance": "500m",
+    "recommended_enchants": [
+      "Momentum to gradually increase Lure Speed, Resilience, and Progress Speed.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Bat Whisperer Rod": {
+    "name": "Bat Whisperer Rod",
+    "url": "https://fischipedia.org/wiki/Bat_Whisperer_Rod",
+    "lure speed": "86%",
+    "luck": "96%",
+    "control": "0.15",
+    "resilience": "30%",
+    "max kg": "200,000kg",
+    "line distance": "45m",
+    "recommended_enchants": [
+      "Mystical for overall stat improvement, instant lure speed, slightly higher luck, and outstanding resilience. Lucky or Divine if Exalted Relic is not available.",
+      "Immortal to focus on Luck for catching higher rarity fish, while also granting a Progress Speed boost."
+    ]
+  },
+  "Blazebringer Rod": {
+    "name": "Blazebringer Rod",
+    "url": "https://fischipedia.org/wiki/Blazebringer_Rod",
+    "lure speed": "80%",
+    "luck": "90%",
+    "control": "0.15",
+    "resilience": "15%",
+    "max kg": "5000kg",
+    "line distance": "25m",
+    "recommended_enchants": [
+      "Momentum to gradually increase Lure Speed, Resilience, and Progress Speed.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Bone Blade": {
+    "name": "Bone Blade",
+    "url": "https://fischipedia.org/wiki/Bone_Blade",
+    "lure speed": "100%",
+    "luck": "0%",
+    "control": "-0.2",
+    "resilience": "100%",
+    "max kg": "1,000,000kg",
+    "line distance": "999m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Brick Built Rod": {
+    "name": "Brick Built Rod",
+    "url": "https://fischipedia.org/wiki/Brick_Built_Rod",
+    "lure speed": "15%",
+    "luck": "80%",
+    "control": "0.1",
+    "resilience": "10%",
+    "max kg": "200kg",
+    "line distance": "15m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Hasty to drastically increase Lure Speed.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Brick Rod": {
+    "name": "Brick Rod",
+    "url": "https://fischipedia.org/wiki/Brick_Rod",
+    "lure speed": "0%",
+    "luck": "75%",
+    "control": "0.35",
+    "resilience": "35%",
+    "max kg": "infkg",
+    "line distance": "200m",
+    "recommended_enchants": [
+      "Momentum to gradually increase Lure Speed, Resilience, and Progress Speed.",
+      "Hasty to drastically increase Lure Speed."
+    ]
+  },
+  "Buddy Bond Rod": {
+    "name": "Buddy Bond Rod",
+    "url": "https://fischipedia.org/wiki/Buddy_Bond_Rod",
+    "lure speed": "0%",
+    "luck": "5%",
+    "control": "0",
+    "resilience": "0%",
+    "max kg": "300kg",
+    "line distance": "20m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Candy Cane Rod": {
+    "name": "Candy Cane Rod",
+    "url": "https://fischipedia.org/wiki/Candy_Cane_Rod",
+    "lure speed": "10%",
+    "luck": "25%",
+    "control": "0.01",
+    "resilience": "-2%",
+    "max kg": "150kg",
+    "line distance": "14m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Hasty to drastically increase Lure Speed.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Carbon Rod": {
+    "name": "Carbon Rod",
+    "url": "https://fischipedia.org/wiki/Carbon_Rod",
+    "lure speed": "15%",
+    "luck": "25%",
+    "control": "0.05",
+    "resilience": "10%",
+    "max kg": "600kg",
+    "line distance": "15m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Hasty to drastically increase Lure Speed.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Carrot Rod": {
+    "name": "Carrot Rod",
+    "url": "https://fischipedia.org/wiki/Carrot_Rod",
+    "lure speed": "85%",
+    "luck": "125%",
+    "control": "0.15",
+    "resilience": "25%",
+    "max kg": "10,000kg",
+    "line distance": "35m",
+    "recommended_enchants": [
+      "Momentum to gradually increase Lure Speed, Resilience, and Progress Speed.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Celestial Rod": {
+    "name": "Celestial Rod",
+    "url": "https://fischipedia.org/wiki/Celestial_Rod",
+    "lure speed": "50%",
+    "luck": "60%",
+    "control": "0.21",
+    "resilience": "25%",
+    "max kg": "350,000kg",
+    "line distance": "70m",
+    "recommended_enchants": [
+      "Momentum to gradually increase Lure Speed, Resilience, and Progress Speed.",
+      "Clever + Wise to maximize XP gain.",
+      "Insight to increase Lure Speed and XP gain."
+    ]
+  },
+  "Cerulean Fang Rod": {
+    "name": "Cerulean Fang Rod",
+    "url": "https://fischipedia.org/wiki/Cerulean_Fang_Rod",
+    "lure speed": "75%",
+    "luck": "190%",
+    "control": "0.25",
+    "resilience": "35%",
+    "max kg": "infkg",
+    "line distance": "70m",
+    "recommended_enchants": [
+      "Swift to increase Lure Speed, and Progress Speed.",
+      "Clever + Wise to maximize XP gain.",
+      "Rage to maximize stab frequency. Piercing or Chaotic if Twisted Relic is not available."
+    ]
+  },
+  "Challenger%27s Rod": {
+    "name": "Challenger%27s Rod",
+    "url": "https://fischipedia.org/wiki/Challenger%27s_Rod",
+    "lure speed": "95%",
+    "luck": "110%",
+    "control": "0.2",
+    "resilience": "20%",
+    "max kg": "200,000kg",
+    "line distance": "70m",
+    "recommended_enchants": [
+      "Quantum to increase Resilience and maximize C$ income. Abyssal if Exalted Relic is not available.",
+      "Clever to maximize XP gain."
+    ]
+  },
+  "Champions Rod": {
+    "name": "Champions Rod",
+    "url": "https://fischipedia.org/wiki/Champions_Rod",
+    "lure speed": "45%",
+    "luck": "65%",
+    "control": "0.25",
+    "resilience": "20%",
+    "max kg": "100,000kg",
+    "line distance": "80m",
+    "recommended_enchants": [
+      "Storming to increase Lure Speed, Luck, and C$ income.",
+      "Divine to increase Lure Speed, Luck, and Resilience."
+    ]
+  },
+  "Christmas Tree Rod": {
+    "name": "Christmas Tree Rod",
+    "url": "https://fischipedia.org/wiki/Christmas_Tree_Rod",
+    "lure speed": "50%",
+    "luck": "75%",
+    "control": "0.1",
+    "resilience": "10%",
+    "max kg": "infkg",
+    "line distance": "20m",
+    "recommended_enchants": [
+      "Divine to increase Lure Speed, Luck, and Resilience.",
+      "Hasty to drastically increase Lure Speed."
+    ]
+  },
+  "Chrysalis": {
+    "name": "Chrysalis",
+    "url": "https://fischipedia.org/wiki/Chrysalis",
+    "lure speed": "100%",
+    "luck": "150%",
+    "control": "0",
+    "resilience": "100%",
+    "max kg": "infkg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Blessed Song + Sea Prince to drastically increase Progress Speed and slightly increase Fish Size. Immortal or Steady if Song of the Deep is not available.",
+      "Herculean to increase Control and Progress Speed . Controlled if Exalted Relic is not available."
+    ]
+  },
+  "Cinder Block Rod": {
+    "name": "Cinder Block Rod",
+    "url": "https://fischipedia.org/wiki/Cinder_Block_Rod",
+    "lure speed": "-50%",
+    "luck": "1000%",
+    "control": "0.7",
+    "resilience": "1000%",
+    "max kg": "100,000,000,000kg",
+    "line distance": "15m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Hasty to drastically increase Lure Speed."
+    ]
+  },
+  "Cinderstring": {
+    "name": "Cinderstring",
+    "url": "https://fischipedia.org/wiki/Cinderstring",
+    "lure speed": "95%",
+    "luck": "175%",
+    "control": "0",
+    "resilience": "70%",
+    "max kg": "infkg",
+    "line distance": "200m",
+    "recommended_enchants": [
+      "Herculean + Sea Prince to increase Control, Max Kg, Progress Speed, and Fish Size. Controlled if Exalted Relic is not available.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Clickbait Caster": {
+    "name": "Clickbait Caster",
+    "url": "https://fischipedia.org/wiki/Clickbait_Caster",
+    "lure speed": "50%",
+    "luck": "225%",
+    "control": "0.25",
+    "resilience": "30%",
+    "max kg": "infkg",
+    "line distance": "70m",
+    "recommended_enchants": [
+      "Quantum to increase Resilience and maximize C$ income. Abyssal if Exalted Relic is not available.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Cornucopia Rod": {
+    "name": "Cornucopia Rod",
+    "url": "https://fischipedia.org/wiki/Cornucopia_Rod",
+    "lure speed": "90%",
+    "luck": "112.7%",
+    "control": "0.05",
+    "resilience": "75%",
+    "max kg": "250,000kg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Herculean + Overclocked to increase Control, Max Kg, Progress Speed, and Forced Progress Speed. Controlled if Exalted Relic is not available.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Crystalized Rod": {
+    "name": "Crystalized Rod",
+    "url": "https://fischipedia.org/wiki/Crystalized_Rod",
+    "lure speed": "35%",
+    "luck": "45%",
+    "control": "0.15",
+    "resilience": "15%",
+    "max kg": "25,000kg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Divine to increase Lure Speed, Luck, and Resilience.",
+      "Hasty to drastically increase Lure Speed."
+    ]
+  },
+  "Depthseeker Rod": {
+    "name": "Depthseeker Rod",
+    "url": "https://fischipedia.org/wiki/Depthseeker_Rod",
+    "lure speed": "55%",
+    "luck": "70%",
+    "control": "0.17",
+    "resilience": "25%",
+    "max kg": "70,000kg",
+    "line distance": "50m",
+    "recommended_enchants": [
+      "Storming to increase Lure Speed, Luck, and C$ income.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Destiny Rod": {
+    "name": "Destiny Rod",
+    "url": "https://fischipedia.org/wiki/Destiny_Rod",
+    "lure speed": "45%",
+    "luck": "250%",
+    "control": "0.2",
+    "resilience": "10%",
+    "max kg": "77,777kg",
+    "line distance": "25m",
+    "recommended_enchants": [
+      "Blessed + Glittered to increase the chances of catching a Shiny / Sparkling fish.",
+      "Hasty to drastically increase Lure Speed."
+    ]
+  },
+  "Dreambreaker": {
+    "name": "Dreambreaker",
+    "url": "https://fischipedia.org/wiki/Dreambreaker",
+    "lure speed": "120%",
+    "luck": "215%",
+    "control": "0.23",
+    "resilience": "66%",
+    "max kg": "infkg",
+    "line distance": "30m",
+    "recommended_enchants": [
+      "Greed + Sea Prince to maximize Fish Size. Sea Overlord or Sea King if Twisted Relic is not available.",
+      "Greed + Cryogenic for a chance to completely stop fish movement and to drastically increase Fish Size. Sea Overlord or Sea King if Twisted Relic is not available.",
+      "Invincible to catch Roslit Volcano / Brine Pool fish."
+    ]
+  },
+  "Dusekkar Rod": {
+    "name": "Dusekkar Rod",
+    "url": "https://fischipedia.org/wiki/Dusekkar_Rod",
+    "lure speed": "80%",
+    "luck": "166%",
+    "control": "0.05",
+    "resilience": "80%",
+    "max kg": "700,000kg",
+    "line distance": "30m",
+    "recommended_enchants": [
+      "Herculean and Sea Prince to significantly increase the size of the control bar while also adding weight and value to all fishes caught. Controlled if Exalted Relic is not an option.",
+      "Blessed Song for a significant Progress Speed boost. Immortal or Steady if Song of the Deep is not available.",
+      "Piercing to increase stab frequency. Chaotic if Exalted Relic is not available."
+    ]
+  },
+  "Duskwire": {
+    "name": "Duskwire",
+    "url": "https://fischipedia.org/wiki/Duskwire",
+    "lure speed": "100%",
+    "luck": "175%",
+    "control": "-0.2",
+    "resilience": "175%",
+    "max kg": "-757,575kg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Invincible required to make the rod usable. There are no other enchantments that will make the rod usable. Cryogenic as a secondary for a chance to completely stop fish movement.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Eardrum": {
+    "name": "Eardrum",
+    "url": "https://fischipedia.org/wiki/Eardrum",
+    "lure speed": "90%",
+    "luck": "125%",
+    "control": "0.3",
+    "resilience": "15%",
+    "max kg": "100,000kg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Quantum to increase Resilience and maximize C$ income. Abyssal if Exalted Relic is not available.",
+      "Mystical to increase Lure Speed, Luck, Resilience, and Progress Speed. Quality if Exalted Relic is not available.",
+      "Wormhole to help with Bestiary completion."
+    ]
+  },
+  "Egg Rod": {
+    "name": "Egg Rod",
+    "url": "https://fischipedia.org/wiki/Egg_Rod",
+    "lure speed": "75%",
+    "luck": "75%",
+    "control": "0.15",
+    "resilience": "15%",
+    "max kg": "20,000kg",
+    "line distance": "25m",
+    "recommended_enchants": [
+      "Divine to increase Lure Speed, Luck, and Resilience.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Eidolon Rod": {
+    "name": "Eidolon Rod",
+    "url": "https://fischipedia.org/wiki/Eidolon_Rod",
+    "lure speed": "100%",
+    "luck": "50%",
+    "control": "0.25",
+    "resilience": "0%",
+    "max kg": "infkg",
+    "line distance": "30m",
+    "recommended_enchants": [
+      "Immortal to drastically increase Luck, and Progress Speed. Divine if Exalted Relic is not available.",
+      "Mystical to increase Lure Speed, Luck, Resilience, and Progress Speed. Quality if Exalted Relic is not available.",
+      "Piercing for a stab passive ability and to increase Progress Speed. Chaotic if Exalted Relic is not available."
+    ]
+  },
+  "Elder Mossripper": {
+    "name": "Elder Mossripper",
+    "url": "https://fischipedia.org/wiki/Elder_Mossripper",
+    "lure speed": "90%",
+    "luck": "215%",
+    "control": "0.2",
+    "resilience": "50%",
+    "max kg": "infkg",
+    "line distance": "125m",
+    "recommended_enchants": [
+      "Sea Overlord + Tryhard to drastically increase Fish Size, and Progress Speed. Sea King if Exalted Relic is not available.",
+      "Momentum to gradually increase Lure Speed, Resilience, and Progress Speed.",
+      "Herculean + Cryogenic for Perfect Catches to complete Mastery quests easier. Controlled if Exalted Relic is not available."
+    ]
+  },
+  "Electric Guitar": {
+    "name": "Electric Guitar",
+    "url": "https://fischipedia.org/wiki/Electric_Guitar",
+    "lure speed": "444%",
+    "luck": "444%",
+    "control": "0.14",
+    "resilience": "44%",
+    "max kg": "444,444,444kg",
+    "line distance": "444m",
+    "recommended_enchants": [
+      "Quantum to increase Resilience and maximize C$ income. Abyssal if Exalted Relic is not available.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Ethereal Prism Rod": {
+    "name": "Ethereal Prism Rod",
+    "url": "https://fischipedia.org/wiki/Ethereal_Prism_Rod",
+    "lure speed": "95%",
+    "luck": "195%",
+    "control": "0.25",
+    "resilience": "40%",
+    "max kg": "250,000kg",
+    "line distance": "70m",
+    "recommended_enchants": [
+      "Momentum + Sea Prince to gradually increase Lure Speed, Resilience, Progress Speed, and Fish Size.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Event Horizon Rod": {
+    "name": "Event Horizon Rod",
+    "url": "https://fischipedia.org/wiki/Event_Horizon_Rod",
+    "lure speed": "10%",
+    "luck": "30%",
+    "control": "0.05",
+    "resilience": "5%",
+    "max kg": "1,000kg",
+    "line distance": "20m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Hasty to drastically increase Lure Speed.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Evil Pitchfork": {
+    "name": "Evil Pitchfork",
+    "url": "https://fischipedia.org/wiki/Evil_Pitchfork",
+    "lure speed": "150%",
+    "luck": "120%",
+    "control": "-0.1",
+    "resilience": "-10%",
+    "max kg": "infkg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Herculean + Overclocked to increase Control, Progress Speed, and Forced Progress Speed. Controlled if Exalted Relic is not available.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Fabulous Rod": {
+    "name": "Fabulous Rod",
+    "url": "https://fischipedia.org/wiki/Fabulous_Rod",
+    "lure speed": "100%",
+    "luck": "500%",
+    "control": "0",
+    "resilience": "50%",
+    "max kg": "infkg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Sea Overlord + Sea Prince to drastically increase Fish Size. Sea King if Exalted Relic is not available.",
+      "Herculean + Cryogenic for a chance to completely stop fish movement and to increase Control, and Progress Speed. Controlled if Exalted Relic is not available.",
+      "Invincible to catch Roslit Volcano / Brine Pool fish."
+    ]
+  },
+  "Fallen Snowblade": {
+    "name": "Fallen Snowblade",
+    "url": "https://fischipedia.org/wiki/Fallen_Snowblade",
+    "lure speed": "75%",
+    "luck": "319%",
+    "control": "0.39",
+    "resilience": "15%",
+    "max kg": "21,512,406kg",
+    "line distance": "50m",
+    "recommended_enchants": [
+      "Sea Overlord + Sea Prince to drastically increase Fish Size. Sea King if Exalted Relic is not available.",
+      "Rage for a powerful stab passive ability. Piercing or Chaotic if Twisted Relic is not available.",
+      "Swift to increase Lure Speed, and Progress Speed."
+    ]
+  },
+  "Fang of the Eclipse": {
+    "name": "Fang of the Eclipse",
+    "url": "https://fischipedia.org/wiki/Fang_of_the_Eclipse",
+    "lure speed": "80%",
+    "luck": "80%",
+    "control": "0.15",
+    "resilience": "20%",
+    "max kg": "25,000kg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Herculean + Cryogenic for a chance to completely stop fish movement and to increase Control, Max Kg, and Progress Speed. Controlled if Exalted Relic is not available.",
+      "Herculean + Sea Prince to increase Control, Max Kg, Progress Speed, and Fish Size. Controlled if Exalted Relic is not available."
+    ]
+  },
+  "Fast Rod": {
+    "name": "Fast Rod",
+    "url": "https://fischipedia.org/wiki/Fast_Rod",
+    "lure speed": "70%",
+    "luck": "10%",
+    "control": "0.05",
+    "resilience": "-5%",
+    "max kg": "175kg",
+    "line distance": "20m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Divine to increase Lure Speed, Luck, and Resilience.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Firefly Rod": {
+    "name": "Firefly Rod",
+    "url": "https://fischipedia.org/wiki/Firefly_Rod",
+    "lure speed": "85%",
+    "luck": "55%",
+    "control": "-0.01",
+    "resilience": "25%",
+    "max kg": "175kg",
+    "line distance": "20m",
+    "recommended_enchants": [
+      "Storming to increase Lure Speed, Luck, and C$ income.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Firework Rod": {
+    "name": "Firework Rod",
+    "url": "https://fischipedia.org/wiki/Firework_Rod",
+    "lure speed": "35%",
+    "luck": "45%",
+    "control": "0.15",
+    "resilience": "15%",
+    "max kg": "25,000kg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Divine to increase Lure Speed, Luck, and Resilience.",
+      "Hasty to drastically increase Lure Speed."
+    ]
+  },
+  "Fischer%27s Rod": {
+    "name": "Fischer%27s Rod",
+    "url": "https://fischipedia.org/wiki/Fischer%27s_Rod",
+    "lure speed": "10%",
+    "luck": "10%",
+    "control": "0.05",
+    "resilience": "5%",
+    "max kg": "100kg",
+    "line distance": "20m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Hasty to drastically increase Lure Speed.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Fischmas Rod": {
+    "name": "Fischmas Rod",
+    "url": "https://fischipedia.org/wiki/Fischmas_Rod",
+    "lure speed": "10%",
+    "luck": "45%",
+    "control": "0.05",
+    "resilience": "15%",
+    "max kg": "2,200kg",
+    "line distance": "22m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Hasty to drastically increase Lure Speed."
+    ]
+  },
+  "Fish Photographer": {
+    "name": "Fish Photographer",
+    "url": "https://fischipedia.org/wiki/Fish_Photographer",
+    "lure speed": "70%",
+    "luck": "250%",
+    "control": "0.3",
+    "resilience": "40%",
+    "max kg": "infkg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Quantum to increase Resilience and maximize C$ income. Insight if Exalted Relic is not available.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Fixer%27s Rod": {
+    "name": "Fixer%27s Rod",
+    "url": "https://fischipedia.org/wiki/Fixer%27s_Rod",
+    "lure speed": "60%",
+    "luck": "60%",
+    "control": "0.3",
+    "resilience": "10%",
+    "max kg": "5,000kg",
+    "line distance": "30m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Swift to increase Lure Speed, and Progress Speed.",
+      "Divine to increase Lure Speed, Luck, and Resilience."
+    ]
+  },
+  "Flimsy Rod": {
+    "name": "Flimsy Rod",
+    "url": "https://fischipedia.org/wiki/Flimsy_Rod",
+    "lure speed": "0%",
+    "luck": "0%",
+    "control": "0",
+    "resilience": "0%",
+    "max kg": "10.4kg",
+    "line distance": "19m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Hasty to drastically increase Lure Speed.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Fortune Rod": {
+    "name": "Fortune Rod",
+    "url": "https://fischipedia.org/wiki/Fortune_Rod",
+    "lure speed": "30%",
+    "luck": "200%",
+    "control": "0.05",
+    "resilience": "10%",
+    "max kg": "3,000kg",
+    "line distance": "20m",
+    "recommended_enchants": [
+      "Quantum to increase Resilience and maximize C$ income. Insight if Exalted Relic is not available.",
+      "Hasty to drastically increase Lure Speed."
+    ]
+  },
+  "Free Spirit Rod": {
+    "name": "Free Spirit Rod",
+    "url": "https://fischipedia.org/wiki/Free_Spirit_Rod",
+    "lure speed": "55%",
+    "luck": "150%",
+    "control": "0.15",
+    "resilience": "10%",
+    "max kg": "5000kg",
+    "line distance": "50m",
+    "recommended_enchants": [
+      "Swift to increase Lure Speed, and Progress Speed.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Friendly Rod": {
+    "name": "Friendly Rod",
+    "url": "https://fischipedia.org/wiki/Friendly_Rod",
+    "lure speed": "85%",
+    "luck": "105%",
+    "control": "0.05",
+    "resilience": "40%",
+    "max kg": "infkg",
+    "line distance": "20m",
+    "recommended_enchants": [
+      "Momentum to gradually increase Lure Speed, Resilience, and Progress Speed.",
+      "Quantum to increase Resilience and maximize C$ income. Abyssal if Exalted Relic is not available.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Controlled if Exalted Relic is not available."
+    ]
+  },
+  "Frog Rod": {
+    "name": "Frog Rod",
+    "url": "https://fischipedia.org/wiki/Frog_Rod",
+    "lure speed": "60%",
+    "luck": "100%",
+    "control": "0.15",
+    "resilience": "15%",
+    "max kg": "650kg",
+    "line distance": "15m",
+    "recommended_enchants": [
+      "Momentum to gradually increase Lure Speed, Resilience, and Progress Speed.",
+      "Hasty to drastically increase Lure Speed.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Frost Warden Rod": {
+    "name": "Frost Warden Rod",
+    "url": "https://fischipedia.org/wiki/Frost_Warden_Rod",
+    "lure speed": "10%",
+    "luck": "45%",
+    "control": "0.05",
+    "resilience": "15%",
+    "max kg": "2,200kg",
+    "line distance": "22m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Hasty to drastically increase Lure Speed."
+    ]
+  },
+  "Frostbane Rod": {
+    "name": "Frostbane Rod",
+    "url": "https://fischipedia.org/wiki/Frostbane_Rod",
+    "lure speed": "80%",
+    "luck": "85%",
+    "control": "0.05",
+    "resilience": "35%",
+    "max kg": "1,500kg",
+    "line distance": "40m",
+    "recommended_enchants": [
+      "Immortal to drastically increase Luck, and Progress Speed. Divine if Exalted Relic is not available.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Frostfire Rod": {
+    "name": "Frostfire Rod",
+    "url": "https://fischipedia.org/wiki/Frostfire_Rod",
+    "lure speed": "20%",
+    "luck": "35%",
+    "control": "0.08",
+    "resilience": "12%",
+    "max kg": "2,200kg",
+    "line distance": "22m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Hasty to drastically increase Lure Speed."
+    ]
+  },
+  "Fungal Rod": {
+    "name": "Fungal Rod",
+    "url": "https://fischipedia.org/wiki/Fungal_Rod",
+    "lure speed": "40%",
+    "luck": "45%",
+    "control": "0",
+    "resilience": "20%",
+    "max kg": "200kg",
+    "line distance": "15m",
+    "recommended_enchants": [
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available.",
+      "Hasty to drastically increase Lure Speed."
+    ]
+  },
+  "Great Dreamer Rod": {
+    "name": "Great Dreamer Rod",
+    "url": "https://fischipedia.org/wiki/Great_Dreamer_Rod",
+    "lure speed": "75%",
+    "luck": "147%",
+    "control": "0.17",
+    "resilience": "17%",
+    "max kg": "15,000kg",
+    "line distance": "60m",
+    "recommended_enchants": [
+      "Quantum to increase Resilience and maximize C$ income. Abyssal if Exalted Relic is not available.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available.",
+      "Momentum to gradually increase Lure Speed, Resilience, and Progress Speed."
+    ]
+  },
+  "Great Rod of Oscar": {
+    "name": "Great Rod of Oscar",
+    "url": "https://fischipedia.org/wiki/Great_Rod_of_Oscar",
+    "lure speed": "95%",
+    "luck": "280%",
+    "control": "0.1",
+    "resilience": "20%",
+    "max kg": "100,000kg",
+    "line distance": "150m",
+    "recommended_enchants": [
+      "Clever + Wise to maximize XP gain.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Haunted Rod": {
+    "name": "Haunted Rod",
+    "url": "https://fischipedia.org/wiki/Haunted_Rod",
+    "lure speed": "50%",
+    "luck": "50%",
+    "control": "0.05",
+    "resilience": "0%",
+    "max kg": "1,000kg",
+    "line distance": "30m",
+    "recommended_enchants": [
+      "Divine to increase Lure Speed, Luck, and Resilience.",
+      "Swift to increase Lure Speed, and Progress Speed.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Heaven%27s Rod": {
+    "name": "Heaven%27s Rod",
+    "url": "https://fischipedia.org/wiki/Heaven%27s_Rod",
+    "lure speed": "40%",
+    "luck": "225%",
+    "control": "0.2",
+    "resilience": "30%",
+    "max kg": "200,000kg",
+    "line distance": "70m",
+    "recommended_enchants": [
+      "Momentum to gradually increase Lure Speed, Resilience, and Progress Speed.",
+      "Hasty to drastically increase Lure Speed."
+    ]
+  },
+  "Ice Warpers Rod": {
+    "name": "Ice Warpers Rod",
+    "url": "https://fischipedia.org/wiki/Ice_Warpers_Rod",
+    "lure speed": "50%",
+    "luck": "60%",
+    "control": "0.15",
+    "resilience": "20%",
+    "max kg": "75,000kg",
+    "line distance": "70m",
+    "recommended_enchants": [
+      "Divine to increase Lure Speed, Luck, and Resilience.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Jack-o-Blazer": {
+    "name": "Jack-o-Blazer",
+    "url": "https://fischipedia.org/wiki/Jack-o-Blazer",
+    "lure speed": "96%",
+    "luck": "166.6%",
+    "control": "0.16",
+    "resilience": "66%",
+    "max kg": "infkg",
+    "line distance": "80m",
+    "recommended_enchants": [
+      "Mystical for an all-around stat boost. Divine if Exalted Relic is not available.",
+      "Blessed Song to greatly increase Progress Speed . Immortal or Steady if Song of the Deep is not available.",
+      "Piercing to add passive stabs, making catching Progress-Locked fish even easier. Chaotic if Exalted Relic is not available."
+    ]
+  },
+  "Jinglestar Rod": {
+    "name": "Jinglestar Rod",
+    "url": "https://fischipedia.org/wiki/Jinglestar_Rod",
+    "lure speed": "85%",
+    "luck": "122.5%",
+    "control": "0.4",
+    "resilience": "5%",
+    "max kg": "infkg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Quantum to increase Resilience and maximize C$ income. Abyssal if Exalted Relic is not available.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Katana Rod": {
+    "name": "Katana Rod",
+    "url": "https://fischipedia.org/wiki/Katana_Rod",
+    "lure speed": "95%",
+    "luck": "150%",
+    "control": "0.15",
+    "resilience": "10%",
+    "max kg": "infkg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Quantum to increase Resilience and maximize C$ income. Abyssal if Exalted Relic is not available.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Kings Rod": {
+    "name": "Kings Rod",
+    "url": "https://fischipedia.org/wiki/Kings_Rod",
+    "lure speed": "30%",
+    "luck": "85%",
+    "control": "0.15",
+    "resilience": "35%",
+    "max kg": "infkg",
+    "line distance": "13m",
+    "recommended_enchants": [
+      "Blood Reckoning to maximize C$ income.",
+      "Sea Overlord to drastically increase Fish Size. Sea King if Exalted Relic is not available."
+    ]
+  },
+  "Kraken Rod": {
+    "name": "Kraken Rod",
+    "url": "https://fischipedia.org/wiki/Kraken_Rod",
+    "lure speed": "60%",
+    "luck": "185%",
+    "control": "0.2",
+    "resilience": "15%",
+    "max kg": "115,000kg",
+    "line distance": "60m",
+    "recommended_enchants": [
+      "Momentum to gradually increase Lure Speed, Resilience, and Progress Speed.",
+      "Hasty to drastically increase Lure Speed."
+    ]
+  },
+  "Krampus%27s Rod": {
+    "name": "Krampus%27s Rod",
+    "url": "https://fischipedia.org/wiki/Krampus%27s_Rod",
+    "lure speed": "30%",
+    "luck": "15%",
+    "control": "0.15",
+    "resilience": "8%",
+    "max kg": "50000kg",
+    "line distance": "40m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Hasty to drastically increase Lure Speed."
+    ]
+  },
+  "Leviathan%27s Fang Rod": {
+    "name": "Leviathan%27s Fang Rod",
+    "url": "https://fischipedia.org/wiki/Leviathan%27s_Fang_Rod",
+    "lure speed": "85%",
+    "luck": "180%",
+    "control": "0.1",
+    "resilience": "10%",
+    "max kg": "230,000kg",
+    "line distance": "70m",
+    "recommended_enchants": [
+      "Blessed Song + Tenacity to drastically increase Progress Speed. Immortal or Steady if Song of the Deep is not available.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Lobster Rod": {
+    "name": "Lobster Rod",
+    "url": "https://fischipedia.org/wiki/Lobster_Rod",
+    "lure speed": "60%",
+    "luck": "110%",
+    "control": "0.3",
+    "resilience": "10%",
+    "max kg": "50,000kg",
+    "line distance": "20m",
+    "recommended_enchants": [
+      "Momentum to gradually increase Lure Speed, Resilience, and Progress Speed.",
+      "Divine to increase Lure Speed, Luck, and Resilience."
+    ]
+  },
+  "Long Rod": {
+    "name": "Long Rod",
+    "url": "https://fischipedia.org/wiki/Long_Rod",
+    "lure speed": "20%",
+    "luck": "80%",
+    "control": "-0.1",
+    "resilience": "20%",
+    "max kg": "250kg",
+    "line distance": "1000m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Hasty to drastically increase Lure Speed.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Lucid Rod": {
+    "name": "Lucid Rod",
+    "url": "https://fischipedia.org/wiki/Lucid_Rod",
+    "lure speed": "80%",
+    "luck": "100%",
+    "control": "-0.05",
+    "resilience": "45%",
+    "max kg": "500,000kg",
+    "line distance": "30m",
+    "recommended_enchants": [
+      "Momentum to gradually increase Lure Speed, Resilience, and Progress Speed.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Controlled if Exalted Relic is not available."
+    ]
+  },
+  "Lucky Rod": {
+    "name": "Lucky Rod",
+    "url": "https://fischipedia.org/wiki/Lucky_Rod",
+    "lure speed": "20%",
+    "luck": "177%",
+    "control": "0.07",
+    "resilience": "7%",
+    "max kg": "175kg",
+    "line distance": "20m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Hasty to drastically increase Lure Speed.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Luminescent Oath": {
+    "name": "Luminescent Oath",
+    "url": "https://fischipedia.org/wiki/Luminescent_Oath",
+    "lure speed": "85%",
+    "luck": "100%",
+    "control": "0.1",
+    "resilience": "12%",
+    "max kg": "25,000kg",
+    "line distance": "150m",
+    "recommended_enchants": [
+      "Mystical to increase Lure Speed, Luck, Resilience, and Progress Speed. Resilient if Exalted Relic is not available.",
+      "Sea Overlord to drastically increase Fish Size. Sea King if Exalted Relic is not available."
+    ]
+  },
+  "Magma Rod": {
+    "name": "Magma Rod",
+    "url": "https://fischipedia.org/wiki/Magma_Rod",
+    "lure speed": "45%",
+    "luck": "55%",
+    "control": "0.15",
+    "resilience": "0%",
+    "max kg": "1,200kg",
+    "line distance": "32m",
+    "recommended_enchants": [
+      "Divine to increase Lure Speed, Luck, and Resilience.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Magnet Rod": {
+    "name": "Magnet Rod",
+    "url": "https://fischipedia.org/wiki/Magnet_Rod",
+    "lure speed": "-10%",
+    "luck": "0%",
+    "control": "0.05",
+    "resilience": "0%",
+    "max kg": "10,000kg",
+    "line distance": "21m",
+    "recommended_enchants": [
+      "Hasty to drastically increase Lure Speed.",
+      "Momentum if Mastery Passive is unlocked, to gradually increase Lure Speed, Resilience, and Progress Speed.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Merchant Rod": {
+    "name": "Merchant Rod",
+    "url": "https://fischipedia.org/wiki/Merchant_Rod",
+    "lure speed": "75%",
+    "luck": "60%",
+    "control": "0.05",
+    "resilience": "18%",
+    "max kg": "5,000kg",
+    "line distance": "25m",
+    "recommended_enchants": [
+      "Blessed Song to drastically increase Progress Speed. Momentum if Exalted Relic is not available.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Merlin%27s Staff": {
+    "name": "Merlin%27s Staff",
+    "url": "https://fischipedia.org/wiki/Merlin%27s_Staff",
+    "lure speed": "80%",
+    "luck": "102.54%",
+    "control": "0.1",
+    "resilience": "50%",
+    "max kg": "infkg",
+    "line distance": "?m",
+    "recommended_enchants": [
+      "Chronos to synergize with the rod's passive.",
+      "Fractured + Tryhard for a drastic decrease in Control, to synergize with the rod's passive.",
+      "Mystical + Cryogenic to increase Lure Speed, Luck, Resilience, and Progress Speed. Divine if Exalted Relic is not available."
+    ]
+  },
+  "Midas Rod": {
+    "name": "Midas Rod",
+    "url": "https://fischipedia.org/wiki/Midas_Rod",
+    "lure speed": "70%",
+    "luck": "79%",
+    "control": "0.2",
+    "resilience": "-30%",
+    "max kg": "4,000kg",
+    "line distance": "15m",
+    "recommended_enchants": [
+      "Mystical to increase Lure Speed, Luck, Resilience, and Progress Speed. Divine if Exalted Relic is not available.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Mission Specialist%27s Rod": {
+    "name": "Mission Specialist%27s Rod",
+    "url": "https://fischipedia.org/wiki/Mission_Specialist%27s_Rod",
+    "lure speed": "60%",
+    "luck": "60%",
+    "control": "0.1",
+    "resilience": "40%",
+    "max kg": "5,000kg",
+    "line distance": "30m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Swift to increase Lure Speed, and Progress Speed.",
+      "Divine to increase Lure Speed, Luck, and Resilience."
+    ]
+  },
+  "Mythical Rod": {
+    "name": "Mythical Rod",
+    "url": "https://fischipedia.org/wiki/Mythical_Rod",
+    "lure speed": "40%",
+    "luck": "60%",
+    "control": "0.05",
+    "resilience": "15%",
+    "max kg": "2,500kg",
+    "line distance": "20m",
+    "recommended_enchants": [
+      "Divine to allow instant luring if the Mastery is completed while also increasing most stats.",
+      "Herculean to significantly increase Control and Max Kg ."
+    ]
+  },
+  "Nates Blade": {
+    "name": "Nates Blade",
+    "url": "https://fischipedia.org/wiki/Nates_Blade",
+    "lure speed": "99%",
+    "luck": "444%",
+    "control": "0",
+    "resilience": "44%",
+    "max kg": "infkg",
+    "line distance": "444m",
+    "recommended_enchants": [
+      "Greed + Tryhard to drastically increase Fish Size, and Progress Speed. Sea Overlord or Sea King if Twisted Relic is not available.",
+      "Greed + Sea Prince to maximize Fish Price when paired with Mutation baits. Sea Overlord or Sea King if Twisted Relic is not available."
+    ]
+  },
+  "Necrotic Rod": {
+    "name": "Necrotic Rod",
+    "url": "https://fischipedia.org/wiki/Necrotic_Rod",
+    "lure speed": "82%",
+    "luck": "143%",
+    "control": "0.05",
+    "resilience": "66%",
+    "max kg": "400,000kg",
+    "line distance": "50m",
+    "recommended_enchants": [
+      "Blessed Song + Overclocked to synergize with the rod's passive. Immortal or Steady if Song of the Deep is not available.",
+      "Invincible to set Max Kg to inf and/or for catching Roslit Volcano / Brine Pool fish.",
+      "Herculean + Overclocked to significantly boost Control . Controlled or Unbreakable if Exalted Relics are not available."
+    ]
+  },
+  "Nico%27s Yarncaster": {
+    "name": "Nico%27s Yarncaster",
+    "url": "https://fischipedia.org/wiki/Nico%27s_Yarncaster",
+    "lure speed": "65%",
+    "luck": "75%",
+    "control": "0.1",
+    "resilience": "35%",
+    "max kg": "10,000kg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Divine to increase Lure Speed, Luck, and Resilience.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "NilCaster": {
+    "name": "NilCaster",
+    "url": "https://fischipedia.org/wiki/NilCaster",
+    "lure speed": "101%",
+    "luck": "101%",
+    "control": "0.101",
+    "resilience": "10.1%",
+    "max kg": "101,010kg",
+    "line distance": "infm",
+    "recommended_enchants": [
+      "Piercing for a stab passive ability and to increase Progress Speed. Chaotic if Exalted Relic is not available.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Controlled if Exalted Relic is not available.",
+      "Invincible for inf Max Kg and to catch Brine Pool / Volcano fish."
+    ]
+  },
+  "No-Life Rod": {
+    "name": "No-Life Rod",
+    "url": "https://fischipedia.org/wiki/No-Life_Rod",
+    "lure speed": "90%",
+    "luck": "105%",
+    "control": "0.23",
+    "resilience": "10%",
+    "max kg": "infkg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Sea Overlord to drastically increase Fish Size. Sea King if Exalted Relic is not available.",
+      "Immortal to drastically increase Luck, and Progress Speed."
+    ]
+  },
+  "Noctone": {
+    "name": "Noctone",
+    "url": "https://fischipedia.org/wiki/Noctone",
+    "lure speed": "85%",
+    "luck": "155%",
+    "control": "0.25",
+    "resilience": "65%",
+    "max kg": "200,000kg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Sea Overlord + Tryhard to drastically increase Fish Size, and Progress Speed. Sea King if Exalted Relic is not available.",
+      "Momentum to gradually increase Lure Speed, Resilience, and Progress Speed."
+    ]
+  },
+  "Nocturnal Rod": {
+    "name": "Nocturnal Rod",
+    "url": "https://fischipedia.org/wiki/Nocturnal_Rod",
+    "lure speed": "50%",
+    "luck": "70%",
+    "control": "0",
+    "resilience": "0%",
+    "max kg": "10,000kg",
+    "line distance": "15m",
+    "recommended_enchants": [
+      "Storming to increase Lure Speed, Luck, and C$ income.",
+      "Hasty to drastically increase Lure Speed."
+    ]
+  },
+  "North-Star Rod": {
+    "name": "North-Star Rod",
+    "url": "https://fischipedia.org/wiki/North-Star_Rod",
+    "lure speed": "5%",
+    "luck": "30%",
+    "control": "0.04",
+    "resilience": "12%",
+    "max kg": "875kg",
+    "line distance": "19m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Hasty to drastically increase Lure Speed.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Onirifalx": {
+    "name": "Onirifalx",
+    "url": "https://fischipedia.org/wiki/Onirifalx",
+    "lure speed": "777%",
+    "luck": "777%",
+    "control": "0.17",
+    "resilience": "-999999999%",
+    "max kg": "infkg",
+    "line distance": "777m",
+    "recommended_enchants": [
+      "Rage + Sea Prince for a powerful stab passive ability, and increased Fish Size. Piercing or Chaotic if Twisted Relic is not available.",
+      "Herculean + Cryogenic for Perfect Catches to complete Mastery quests easier. Controlled if Exalted Relic is not available."
+    ]
+  },
+  "Original No-Life Rod": {
+    "name": "Original No-Life Rod",
+    "url": "https://fischipedia.org/wiki/Original_No-Life_Rod",
+    "lure speed": "99%",
+    "luck": "100%",
+    "control": "0.2",
+    "resilience": "10%",
+    "max kg": "infkg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Piercing for a stab passive ability and to increase Progress Speed. Chaotic if Exalted Relic is not available.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Paintbrush": {
+    "name": "Paintbrush",
+    "url": "https://fischipedia.org/wiki/Paintbrush",
+    "lure speed": "1618%",
+    "luck": "333%",
+    "control": "0.123",
+    "resilience": "45%",
+    "max kg": "123,456,789kg",
+    "line distance": "150m",
+    "recommended_enchants": [
+      "Blessed + Glittered to increase the chances of catching a Shiny / Sparkling fish.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Paleontologist%27s Rod": {
+    "name": "Paleontologist%27s Rod",
+    "url": "https://fischipedia.org/wiki/Paleontologist%27s_Rod",
+    "lure speed": "60%",
+    "luck": "150%",
+    "control": "0.1",
+    "resilience": "10%",
+    "max kg": "5,000kg",
+    "line distance": "30m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Swift to increase Lure Speed, and Progress Speed.",
+      "Divine to increase Lure Speed, Luck, and Resilience."
+    ]
+  },
+  "Paper Fan Rod": {
+    "name": "Paper Fan Rod",
+    "url": "https://fischipedia.org/wiki/Paper_Fan_Rod",
+    "lure speed": "70%",
+    "luck": "75%",
+    "control": "-0.05",
+    "resilience": "10%",
+    "max kg": "1,500kg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Quantum to increase Resilience and maximize C$ income. Abyssal if Exalted Relic is not available.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available.",
+      "Swift to increase Lure Speed, and Progress Speed.",
+      "Rage to maximize stab frequency. Piercing or Chaotic if Twisted Relic is not available."
+    ]
+  },
+  "Patriot Rod": {
+    "name": "Patriot Rod",
+    "url": "https://fischipedia.org/wiki/Patriot_Rod",
+    "lure speed": "70%",
+    "luck": "100%",
+    "control": "0.04",
+    "resilience": "7%",
+    "max kg": "742,025kg",
+    "line distance": "74m",
+    "recommended_enchants": [
+      "Divine to increase Lure Speed, Luck, and Resilience.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Controlled if Exalted Relic is not available."
+    ]
+  },
+  "Pen Rod": {
+    "name": "Pen Rod",
+    "url": "https://fischipedia.org/wiki/Pen_Rod",
+    "lure speed": "65%",
+    "luck": "150%",
+    "control": "0.15",
+    "resilience": "10%",
+    "max kg": "infkg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Rage + Overclocked to greatly increase Stab Frequency, and Forced Progress Speed. Piercing or Chaotic if Twisted Relic is not available.",
+      "Frightful + Eerie if Available to reduce Resilience, increase Fish Size, C$ income, and drastically increase Progress Speed.",
+      "Blessed Song + Tryhard to maximize Progress Speed. Steady if Song of the Deep is not available.",
+      "Sea Overlord + Sea Prince to maximize Fish Size. Sea King if Exalted Relic is not available."
+    ]
+  },
+  "Phoenix Rod": {
+    "name": "Phoenix Rod",
+    "url": "https://fischipedia.org/wiki/Phoenix_Rod",
+    "lure speed": "55%",
+    "luck": "80%",
+    "control": "0.02",
+    "resilience": "15%",
+    "max kg": "8,000kg",
+    "line distance": "20m",
+    "recommended_enchants": [
+      "Momentum to gradually increase Lure Speed, Resilience, and Progress Speed.",
+      "Divine to increase Lure Speed, Luck and Resilience."
+    ]
+  },
+  "Plastic Rod": {
+    "name": "Plastic Rod",
+    "url": "https://fischipedia.org/wiki/Plastic_Rod",
+    "lure speed": "20%",
+    "luck": "15%",
+    "control": "0",
+    "resilience": "10%",
+    "max kg": "100kg",
+    "line distance": "15m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Hasty to drastically increase Lure Speed.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Polaris Serenade": {
+    "name": "Polaris Serenade",
+    "url": "https://fischipedia.org/wiki/Polaris_Serenade",
+    "lure speed": "100%",
+    "luck": "400%",
+    "control": "0.4",
+    "resilience": "40%",
+    "max kg": "infkg",
+    "line distance": "250m",
+    "recommended_enchants": [
+      "Sea Overlord + Sea Prince to drastically increase Fish Size. Sea King if Exalted Relic is not available.",
+      "Rage for a powerful stab passive ability. Piercing or Chaotic if Twisted Relic is not available."
+    ]
+  },
+  "Popsicle Rod": {
+    "name": "Popsicle Rod",
+    "url": "https://fischipedia.org/wiki/Popsicle_Rod",
+    "lure speed": "100%",
+    "luck": "150%",
+    "control": "0",
+    "resilience": "0%",
+    "max kg": "100kg",
+    "line distance": "?m",
+    "recommended_enchants": [
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Poseidon Rod": {
+    "name": "Poseidon Rod",
+    "url": "https://fischipedia.org/wiki/Poseidon_Rod",
+    "lure speed": "50%",
+    "luck": "165%",
+    "control": "0.2",
+    "resilience": "40%",
+    "max kg": "100,000kg",
+    "line distance": "65m",
+    "recommended_enchants": [
+      "Momentum to gradually increase Lure Speed, Resilience, and Progress Speed.",
+      "Sea Overlord to drastically increase Fish Size. Sea King if Exalted Relic is not available."
+    ]
+  },
+  "Precision Rod": {
+    "name": "Precision Rod",
+    "url": "https://fischipedia.org/wiki/Precision_Rod",
+    "lure speed": "20%",
+    "luck": "150%",
+    "control": "0",
+    "resilience": "15%",
+    "max kg": "12,000kg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Quantum to increase Resilience and maximize C$ income. Insight if Exalted Relic is not available.",
+      "Hasty to drastically increase Lure Speed."
+    ]
+  },
+  "Rainbow Cluster Rod": {
+    "name": "Rainbow Cluster Rod",
+    "url": "https://fischipedia.org/wiki/Rainbow_Cluster_Rod",
+    "lure speed": "65%",
+    "luck": "180%",
+    "control": "0",
+    "resilience": "25%",
+    "max kg": "50,000kg",
+    "line distance": "50m",
+    "recommended_enchants": [
+      "Swift to increase Lure Speed, and Progress Speed.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Controlled if Exalted Relic is not available."
+    ]
+  },
+  "Random Rod": {
+    "name": "Random Rod",
+    "url": "https://fischipedia.org/wiki/Random_Rod",
+    "lure speed": "80%",
+    "luck": "1000%",
+    "control": "0.1",
+    "resilience": "10%",
+    "max kg": "infkg",
+    "line distance": "?m",
+    "recommended_enchants": [
+      "Piercing for a stab passive ability and to increase Progress Speed. Chaotic if Exalted Relic is not available.",
+      "Mystical as a countermeasure for the unpredictable Resilience stat. Resilient if Exalted Relic is not available.",
+      "Herculean as a countermeasure for the unpredictable Control stat. Controlled if Exalted Relic is not available.",
+      "Blessed Song as a countermeasure for the unpredictable Progress Speed. Immortal or Steady if Song of the Deep is not available."
+    ]
+  },
+  "Rapid Rod": {
+    "name": "Rapid Rod",
+    "url": "https://fischipedia.org/wiki/Rapid_Rod",
+    "lure speed": "89%",
+    "luck": "49%",
+    "control": "0",
+    "resilience": "9%",
+    "max kg": "800kg",
+    "line distance": "21m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Mystical to increase Lure Speed, Luck, Resilience, and Progress Speed. Resilient if Exalted Relic is not available.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Reinforced Rod": {
+    "name": "Reinforced Rod",
+    "url": "https://fischipedia.org/wiki/Reinforced_Rod",
+    "lure speed": "40%",
+    "luck": "65%",
+    "control": "0.1",
+    "resilience": "15%",
+    "max kg": "infkg",
+    "line distance": "32m",
+    "recommended_enchants": [
+      "Hasty to drastically increase Lure Speed.",
+      "Blood Reckoning to maximize C$ income."
+    ]
+  },
+  "Relic Rod": {
+    "name": "Relic Rod",
+    "url": "https://fischipedia.org/wiki/Relic_Rod",
+    "lure speed": "80%",
+    "luck": "125%",
+    "control": "-0.1",
+    "resilience": "35%",
+    "max kg": "250,000kg",
+    "line distance": "20m",
+    "recommended_enchants": [
+      "Quantum to increase Resilience and maximize C$ income. Abyssal if Exalted Relic is not available.",
+      "Divine to increase Lure Speed, Luck, and Resilience.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Resourceful Rod": {
+    "name": "Resourceful Rod",
+    "url": "https://fischipedia.org/wiki/Resourceful_Rod",
+    "lure speed": "30%",
+    "luck": "60%",
+    "control": "-0.01",
+    "resilience": "10%",
+    "max kg": "1,000kg",
+    "line distance": "50m",
+    "recommended_enchants": [
+      "Scrapper to synergize with the rod's passive.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Riptide Rod": {
+    "name": "Riptide Rod",
+    "url": "https://fischipedia.org/wiki/Riptide_Rod",
+    "lure speed": "60%",
+    "luck": "100%",
+    "control": "0.05",
+    "resilience": "20%",
+    "max kg": "3,500kg",
+    "line distance": "50m",
+    "recommended_enchants": [
+      "Quantum to increase Resilience and maximize C$ income. Abyssal if Exalted Relic is not available.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Rod Of The Depths": {
+    "name": "Rod Of The Depths",
+    "url": "https://fischipedia.org/wiki/Rod_Of_The_Depths",
+    "lure speed": "65%",
+    "luck": "130%",
+    "control": "0.15",
+    "resilience": "10%",
+    "max kg": "30,000kg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Mystical to increase Lure Speed, Luck, Resilience, and Progress Speed. Quality if Exalted Relic is not available.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Controlled if Exalted Relic is not available.",
+      "Wormhole to help with Bestiary completion."
+    ]
+  },
+  "Rod Of The Eternal King": {
+    "name": "Rod Of The Eternal King",
+    "url": "https://fischipedia.org/wiki/Rod_Of_The_Eternal_King",
+    "lure speed": "50%",
+    "luck": "160%",
+    "control": "0.175",
+    "resilience": "15%",
+    "max kg": "75,000kg",
+    "line distance": "80m",
+    "recommended_enchants": [
+      "Divine + Tenacity to increase Lure Speed, Luck, Resilience, and synergize with the rod's passive.",
+      "Hasty to drastically increase Lure Speed."
+    ]
+  },
+  "Rod Of The Exalted One": {
+    "name": "Rod Of The Exalted One",
+    "url": "https://fischipedia.org/wiki/Rod_Of_The_Exalted_One",
+    "lure speed": "55%",
+    "luck": "170%",
+    "control": "0.15",
+    "resilience": "20%",
+    "max kg": "57,000kg",
+    "line distance": "70m",
+    "recommended_enchants": [
+      "Scavenger to synergize with the rod's passive.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Rod Of The Forgotten Fang": {
+    "name": "Rod Of The Forgotten Fang",
+    "url": "https://fischipedia.org/wiki/Rod_Of_The_Forgotten_Fang",
+    "lure speed": "80%",
+    "luck": "145%",
+    "control": "0.22",
+    "resilience": "25%",
+    "max kg": "300,000kg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Rage for a powerful stab passive ability. Piercing or Chaotic if Twisted Relic is not available.",
+      "Momentum to gradually increase Lure Speed, Resilience, and Progress Speed.",
+      "Mystical to increase Lure Speed, Luck, Resilience, and Progress Speed Divine if Exalted Relic is not available."
+    ]
+  },
+  "Rod Of The Zenith": {
+    "name": "Rod Of The Zenith",
+    "url": "https://fischipedia.org/wiki/Rod_Of_The_Zenith",
+    "lure speed": "85%",
+    "luck": "145%",
+    "control": "-0.1",
+    "resilience": "12%",
+    "max kg": "250,000kg",
+    "line distance": "70m",
+    "recommended_enchants": [
+      "Herculean + Sea Prince to increase Control, Max Kg, Progress Speed, and Fish Size. Controlled if Exalted Relic is not available.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Rod Of Time": {
+    "name": "Rod Of Time",
+    "url": "https://fischipedia.org/wiki/Rod_Of_Time",
+    "lure speed": "20%",
+    "luck": "25%",
+    "control": "0.05",
+    "resilience": "20%",
+    "max kg": "2500kg",
+    "line distance": "20m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Hasty to drastically increase Lure Speed.",
+      "Clever to maximize XP gain."
+    ]
+  },
+  "Rod of the Cosmos": {
+    "name": "Rod of the Cosmos",
+    "url": "https://fischipedia.org/wiki/Rod_of_the_Cosmos",
+    "lure speed": "50%",
+    "luck": "135%",
+    "control": "0.1",
+    "resilience": "10%",
+    "max kg": "10,000kg",
+    "line distance": "?m",
+    "recommended_enchants": [
+      "Hasty to drastically increase Lure Speed.",
+      "Fractured + Tryhard to maximize Progress Speed. Blessed Song , Immortal or Steady if Twisted Relic is not available."
+    ]
+  },
+  "Rose Rend": {
+    "name": "Rose Rend",
+    "url": "https://fischipedia.org/wiki/Rose_Rend",
+    "lure speed": "85%",
+    "luck": "115%",
+    "control": "0.15",
+    "resilience": "15%",
+    "max kg": "100,000kg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Quantum to increase Resilience and maximize C$ income. Abyssal if Exalted Relic is not available.",
+      "Clever to maximize XP gain."
+    ]
+  },
+  "Ruinous Oath": {
+    "name": "Ruinous Oath",
+    "url": "https://fischipedia.org/wiki/Ruinous_Oath",
+    "lure speed": "95%",
+    "luck": "500%",
+    "control": "0.08",
+    "resilience": "25%",
+    "max kg": "infkg",
+    "line distance": "150m",
+    "recommended_enchants": [
+      "Mystical + Sea Prince to increase Lure Speed, Luck, Resilience, Progress Speed, and Fish Size. Resilient if Exalted Relic is not available.",
+      "Herculean to increase Control, and Progress Speed. Controlled if Exalted Relic is not available.",
+      "Sea Overlord to drastically increase Fish Size. Sea King if Exalted Relic is not available."
+    ]
+  },
+  "Sanguine Spire": {
+    "name": "Sanguine Spire",
+    "url": "https://fischipedia.org/wiki/Sanguine_Spire",
+    "lure speed": "100%",
+    "luck": "100%",
+    "control": "0.125",
+    "resilience": "25%",
+    "max kg": "infkg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Immortal to drastically increase Luck, and Progress Speed. Breezed if Exalted Relic is not available.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Scarlet Ravager": {
+    "name": "Scarlet Ravager",
+    "url": "https://fischipedia.org/wiki/Scarlet_Ravager",
+    "lure speed": "90%",
+    "luck": "125%",
+    "control": "0.2",
+    "resilience": "20%",
+    "max kg": "infkg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Quantum to increase Resilience and maximize C$ income. Abyssal if Exalted Relic is not available.",
+      "Clever to maximize XP gain."
+    ]
+  },
+  "Scarlet Spincaster Rod": {
+    "name": "Scarlet Spincaster Rod",
+    "url": "https://fischipedia.org/wiki/Scarlet_Spincaster_Rod",
+    "lure speed": "50%",
+    "luck": "170%",
+    "control": "-0.2",
+    "resilience": "150%",
+    "max kg": "250,000kg",
+    "line distance": "30m",
+    "recommended_enchants": [
+      "Herculean to increase Control, Max Kg, and Progress Speed. Controlled if Exalted Relic is not available.",
+      "Hasty to drastically increase Lure Speed."
+    ]
+  },
+  "Scurvy Rod": {
+    "name": "Scurvy Rod",
+    "url": "https://fischipedia.org/wiki/Scurvy_Rod",
+    "lure speed": "25%",
+    "luck": "50%",
+    "control": "0",
+    "resilience": "15%",
+    "max kg": "2,000kg",
+    "line distance": "20m",
+    "recommended_enchants": [
+      "Hasty to drastically increase Lure Speed.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Seasons Rod": {
+    "name": "Seasons Rod",
+    "url": "https://fischipedia.org/wiki/Seasons_Rod",
+    "lure speed": "25%",
+    "luck": "70%",
+    "control": "0.03",
+    "resilience": "20%",
+    "max kg": "8,000kg",
+    "line distance": "50m",
+    "recommended_enchants": [
+      "Hasty to drastically increase Lure Speed.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Seraphic Rod": {
+    "name": "Seraphic Rod",
+    "url": "https://fischipedia.org/wiki/Seraphic_Rod",
+    "lure speed": "95%",
+    "luck": "150%",
+    "control": "0.25",
+    "resilience": "20%",
+    "max kg": "infkg",
+    "line distance": "130m",
+    "recommended_enchants": [
+      "Sea Overlord + Tryhard to drastically increase Fish Size and Progress Speed. Sea King if Exalted Relic is not available.",
+      "Piercing for a stab passive ability and to increase Progress Speed. Chaotic if Exalted Relic is not available.",
+      "Blessed + Glittered if Mastery Passive is unlocked, to increase the chances of catching a Shiny / Sparkling fish."
+    ]
+  },
+  "Shamrock Rod": {
+    "name": "Shamrock Rod",
+    "url": "https://fischipedia.org/wiki/Shamrock_Rod",
+    "lure speed": "25%",
+    "luck": "150%",
+    "control": "0.15",
+    "resilience": "10%",
+    "max kg": "5,000kg",
+    "line distance": "60m",
+    "recommended_enchants": [
+      "Hasty to drastically increase Lure Speed.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Silly Fun Happy Rod": {
+    "name": "Silly Fun Happy Rod",
+    "url": "https://fischipedia.org/wiki/Silly_Fun_Happy_Rod",
+    "lure speed": "inf",
+    "luck": "250%",
+    "control": "-0.01",
+    "resilience": "inf%",
+    "max kg": "infkg",
+    "line distance": "infm",
+    "recommended_enchants": [
+      "Greed + Sea Prince to maximize Fish Size. Sea Overlord or Sea King if Twisted Relic is not available.",
+      "Herculean to allow near effortless catching. Controlled if Exalted Relic is not available."
+    ]
+  },
+  "Smurf Rod": {
+    "name": "Smurf Rod",
+    "url": "https://fischipedia.org/wiki/Smurf_Rod",
+    "lure speed": "15%",
+    "luck": "80%",
+    "control": "0.1",
+    "resilience": "10%",
+    "max kg": "200kg",
+    "line distance": "15m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Hasty to drastically increase Lure Speed.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Sovereign Doombringer": {
+    "name": "Sovereign Doombringer",
+    "url": "https://fischipedia.org/wiki/Sovereign_Doombringer",
+    "lure speed": "65%",
+    "luck": "150%",
+    "control": "0.15",
+    "resilience": "10%",
+    "max kg": "infkg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Quantum to increase Resilience and maximize C$ income. Insight if Exalted Relic is not available.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Spiritbinder": {
+    "name": "Spiritbinder",
+    "url": "https://fischipedia.org/wiki/Spiritbinder",
+    "lure speed": "90%",
+    "luck": "25%",
+    "control": "0.03",
+    "resilience": "5%",
+    "max kg": "150,000kg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Immortal to drastically increase Luck, and Progress Speed. Divine if Exalted Relic is not available.",
+      "Mystical to increase Lure Speed, Luck, Resilience, and Progress Speed. Quality if Exalted Relic is not available."
+    ]
+  },
+  "Spooky Rod": {
+    "name": "Spooky Rod",
+    "url": "https://fischipedia.org/wiki/Spooky_Rod",
+    "lure speed": "75%",
+    "luck": "66%",
+    "control": "0.2",
+    "resilience": "-10%",
+    "max kg": "150,000kg",
+    "line distance": "20m",
+    "recommended_enchants": [
+      "Mystical to increase Resilience and overall stats. Resilient or Divine if Exalted Relic is not available.",
+      "Swift to allow instant luring. Insight or Hasty as a moderate alternative.",
+      "Chronos to synergize with the rod's passive."
+    ]
+  },
+  "Steady Rod": {
+    "name": "Steady Rod",
+    "url": "https://fischipedia.org/wiki/Steady_Rod",
+    "lure speed": "-60%",
+    "luck": "35%",
+    "control": "0.05",
+    "resilience": "30%",
+    "max kg": "250,000kg",
+    "line distance": "25m",
+    "recommended_enchants": [
+      "Blood Reckoning to maximize C$ income.",
+      "Hasty to drastically increase Lure Speed."
+    ]
+  },
+  "Stone Rod": {
+    "name": "Stone Rod",
+    "url": "https://fischipedia.org/wiki/Stone_Rod",
+    "lure speed": "-5%",
+    "luck": "40%",
+    "control": "0.2",
+    "resilience": "5%",
+    "max kg": "50,000kg",
+    "line distance": "24m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Hasty to drastically increase Lure Speed.",
+      "Divine to increase Lure Speed, Luck, and Resilience."
+    ]
+  },
+  "Summit Rod": {
+    "name": "Summit Rod",
+    "url": "https://fischipedia.org/wiki/Summit_Rod",
+    "lure speed": "45%",
+    "luck": "75%",
+    "control": "0.25",
+    "resilience": "15%",
+    "max kg": "200,000kg",
+    "line distance": "70m",
+    "recommended_enchants": [
+      "Divine to increase Lure Speed, Luck, and Resilience.",
+      "Hasty to drastically increase Lure Speed."
+    ]
+  },
+  "Sunken Rod": {
+    "name": "Sunken Rod",
+    "url": "https://fischipedia.org/wiki/Sunken_Rod",
+    "lure speed": "50%",
+    "luck": "150%",
+    "control": "0.15",
+    "resilience": "15%",
+    "max kg": "25,000kg",
+    "line distance": "60m",
+    "recommended_enchants": [
+      "Scavenger to synergize with the rod's passive.",
+      "Hasty to drastically increase Lure Speed.",
+      "Mystical if Mastery Passive is unlocked, to increase Lure Speed, Luck, Resilience, and Progress Speed. Quality if Exalted Relic is not available."
+    ]
+  },
+  "Superstar Rod": {
+    "name": "Superstar Rod",
+    "url": "https://fischipedia.org/wiki/Superstar_Rod",
+    "lure speed": "50%",
+    "luck": "70%",
+    "control": "0.1",
+    "resilience": "15%",
+    "max kg": "10,000kg",
+    "line distance": "200m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Hasty to drastically increase Lure Speed.",
+      "Divine to increase Lure Speed, Luck, and Resilience."
+    ]
+  },
+  "Sword of Darkness": {
+    "name": "Sword of Darkness",
+    "url": "https://fischipedia.org/wiki/Sword_of_Darkness",
+    "lure speed": "250%",
+    "luck": "250%",
+    "control": "-0.17",
+    "resilience": "-50%",
+    "max kg": "1,000,000kg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Herculean to increase Control, and Progress Speed. Controlled if Exalted Relic is not available.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Tempest Rod": {
+    "name": "Tempest Rod",
+    "url": "https://fischipedia.org/wiki/Tempest_Rod",
+    "lure speed": "90%",
+    "luck": "120%",
+    "control": "0.15",
+    "resilience": "40%",
+    "max kg": "80,000kg",
+    "line distance": "20m",
+    "recommended_enchants": [
+      "Quantum to increase Resilience and maximize C$ income. Abyssal if Exalted Relic is not available.",
+      "Clever to maximize XP gain."
+    ]
+  },
+  "Test Rod": {
+    "name": "Test Rod",
+    "url": "https://fischipedia.org/wiki/Test_Rod",
+    "lure speed": "150%",
+    "luck": "150%",
+    "control": "0.15",
+    "resilience": "15%",
+    "max kg": "150000kg",
+    "line distance": "150m",
+    "recommended_enchants": [
+      "Wormhole to help with Bestiary completion.",
+      "Quantum to increase Resilience and maximize C$ income. Abyssal if Exalted Relic is not available."
+    ]
+  },
+  "The Boom Ball": {
+    "name": "The Boom Ball",
+    "url": "https://fischipedia.org/wiki/The_Boom_Ball",
+    "lure speed": "0%",
+    "luck": "0%",
+    "control": "0.5",
+    "resilience": "-500%",
+    "max kg": "500,000,000kg",
+    "line distance": "10m",
+    "recommended_enchants": [
+      "Herculean to increase Control, and Progress Speed. Controlled if Exalted Relic is not available.",
+      "Hasty to drastically increase Lure Speed."
+    ]
+  },
+  "The Lost Rod": {
+    "name": "The Lost Rod",
+    "url": "https://fischipedia.org/wiki/The_Lost_Rod",
+    "lure speed": "45%",
+    "luck": "90%",
+    "control": "0.08",
+    "resilience": "20%",
+    "max kg": "55,000kg",
+    "line distance": "70m",
+    "recommended_enchants": [
+      "Momentum to gradually increase Lure Speed, Resilience, and Progress Speed.",
+      "Hasty to drastically increase Lure Speed."
+    ]
+  },
+  "Tidal Wave Rod": {
+    "name": "Tidal Wave Rod",
+    "url": "https://fischipedia.org/wiki/Tidal_Wave_Rod",
+    "lure speed": "50%",
+    "luck": "65%",
+    "control": "0.1",
+    "resilience": "20%",
+    "max kg": "8,500kg",
+    "line distance": "?m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Hasty to drastically increase Lure Speed.",
+      "Divine to increase Lure Speed, Luck, and Resilience."
+    ]
+  },
+  "Toxic Spire Rod": {
+    "name": "Toxic Spire Rod",
+    "url": "https://fischipedia.org/wiki/Toxic_Spire_Rod",
+    "lure speed": "87%",
+    "luck": "248%",
+    "control": "0.3",
+    "resilience": "-20%",
+    "max kg": "100,000kg",
+    "line distance": "75m",
+    "recommended_enchants": [
+      "Piercing for a stab passive ability and to increase Progress Speed. Chaotic if Exalted Relic is not available.",
+      "Mystical to increase Lure Speed, Luck, Resilience, and Progress Speed. Resilient if Exalted Relic is not available.",
+      "Clever to maximize XP gain."
+    ]
+  },
+  "Training Rod": {
+    "name": "Training Rod",
+    "url": "https://fischipedia.org/wiki/Training_Rod",
+    "lure speed": "10%",
+    "luck": "-70%",
+    "control": "0.2",
+    "resilience": "20%",
+    "max kg": "9kg",
+    "line distance": "20m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Hasty to drastically increase Lure Speed.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Trident Rod": {
+    "name": "Trident Rod",
+    "url": "https://fischipedia.org/wiki/Trident_Rod",
+    "lure speed": "35%",
+    "luck": "150%",
+    "control": "0.05",
+    "resilience": "0%",
+    "max kg": "6,000kg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Hasty to drastically increase Lure Speed.",
+      "Swift if Mastery Passive is unlocked, to increase Lure Speed, and Progress Speed.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Tryhard Rod": {
+    "name": "Tryhard Rod",
+    "url": "https://fischipedia.org/wiki/Tryhard_Rod",
+    "lure speed": "80%",
+    "luck": "999%",
+    "control": "-0.37",
+    "resilience": "-500%",
+    "max kg": "999,999,999,999,999kg",
+    "line distance": "150m",
+    "recommended_enchants": [
+      "Herculean + Cryogenic for a chance to completely stop fish movement and to increase Control, and Progress Speed. Controlled if Exalted Relic is not available.",
+      "Herculean + Sea Prince to increase Control, Progress Speed, and Fish Size. Controlled if Exalted Relic is not available."
+    ]
+  },
+  "Upside-Down Rod": {
+    "name": "Upside-Down Rod",
+    "url": "https://fischipedia.org/wiki/Upside-Down_Rod",
+    "lure speed": "0%",
+    "luck": "0%",
+    "control": "0",
+    "resilience": "0%",
+    "max kg": "10.4kg",
+    "line distance": "19m",
+    "recommended_enchants": [
+      "Due to the rod’s overall poor money-making potential, low rod tier, or other limiting factors, no enchantment is suitable for optimal grinding with this rod.",
+      "Hasty to drastically increase Lure Speed.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "Verdant Shear Rod": {
+    "name": "Verdant Shear Rod",
+    "url": "https://fischipedia.org/wiki/Verdant_Shear_Rod",
+    "lure speed": "70%",
+    "luck": "75%",
+    "control": "0.1",
+    "resilience": "20%",
+    "max kg": "2000kg",
+    "line distance": "15m",
+    "recommended_enchants": [
+      "Immortal to drastically increase Luck, and Progress Speed. Divine if Exalted Relic is not available.",
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available."
+    ]
+  },
+  "View Smasher": {
+    "name": "View Smasher",
+    "url": "https://fischipedia.org/wiki/View_Smasher",
+    "lure speed": "60%",
+    "luck": "230%",
+    "control": "0.25",
+    "resilience": "25%",
+    "max kg": "infkg",
+    "line distance": "100m",
+    "recommended_enchants": [
+      "Quantum to increase Resilience and maximize C$ income. Abyssal if Exalted Relic is not available.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Vinefang Rod": {
+    "name": "Vinefang Rod",
+    "url": "https://fischipedia.org/wiki/Vinefang_Rod",
+    "lure speed": "80%",
+    "luck": "117%",
+    "control": "-0.11",
+    "resilience": "-16%",
+    "max kg": "25000kg",
+    "line distance": "20m",
+    "recommended_enchants": [
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available.",
+      "Rage for a powerful stab passive ability. Piercing or Chaotic if Twisted Relic is not available."
+    ]
+  },
+  "Vineweaver Rod": {
+    "name": "Vineweaver Rod",
+    "url": "https://fischipedia.org/wiki/Vineweaver_Rod",
+    "lure speed": "80%",
+    "luck": "117%",
+    "control": "0.1",
+    "resilience": "40%",
+    "max kg": "50,000kg",
+    "line distance": "15m",
+    "recommended_enchants": [
+      "Momentum to gradually increase Lure Speed, Resilience, and Progress Speed.",
+      "Invincible for inf Max Kg and to catch Roslit Volcano / Brine Pool fish."
+    ]
+  },
+  "Volcanic Rod": {
+    "name": "Volcanic Rod",
+    "url": "https://fischipedia.org/wiki/Volcanic_Rod",
+    "lure speed": "40%",
+    "luck": "90%",
+    "control": "0.1",
+    "resilience": "15%",
+    "max kg": "50,000kg",
+    "line distance": "70m",
+    "recommended_enchants": [
+      "Momentum to gradually increase Lure Speed, Resilience, and Progress Speed.",
+      "Hasty to drastically increase Lure Speed."
+    ]
+  },
+  "Voyager Rod": {
+    "name": "Voyager Rod",
+    "url": "https://fischipedia.org/wiki/Voyager_Rod",
+    "lure speed": "45%",
+    "luck": "85%",
+    "control": "0.08",
+    "resilience": "20%",
+    "max kg": "300,000kg",
+    "line distance": "60m",
+    "recommended_enchants": [
+      "Hasty to drastically increase Lure Speed.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Wicked Fang Rod": {
+    "name": "Wicked Fang Rod",
+    "url": "https://fischipedia.org/wiki/Wicked_Fang_Rod",
+    "lure speed": "95%",
+    "luck": "140%",
+    "control": "0",
+    "resilience": "15%",
+    "max kg": "infkg",
+    "line distance": "75m",
+    "recommended_enchants": [
+      "Herculean to increase Control, Max Kg, and Progress Speed. Controlled if Exalted Relic is not available.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Wildflower Rod": {
+    "name": "Wildflower Rod",
+    "url": "https://fischipedia.org/wiki/Wildflower_Rod",
+    "lure speed": "70%",
+    "luck": "75%",
+    "control": "0.17",
+    "resilience": "17%",
+    "max kg": "700kg",
+    "line distance": "15m",
+    "recommended_enchants": [
+      "Herculean to increase Control, Max Kg, and Progress Speed. Unbreakable if Exalted Relic is not available.",
+      "Quality to increase Lure Speed, Luck, Resilience, and Progress Speed."
+    ]
+  },
+  "Wind Elemental": {
+    "name": "Wind Elemental",
+    "url": "https://fischipedia.org/wiki/Wind_Elemental",
+    "lure speed": "555%",
+    "luck": "555%",
+    "control": "0.055",
+    "resilience": "55%",
+    "max kg": "infkg",
+    "line distance": "555m",
+    "recommended_enchants": [
+      "Sea Overlord to drastically increase Fish Size. Sea King if Exalted Relic is not available.",
+      "Blessed Song to drastically increase Progress Speed. Momentum if Song of the Deep is not available.",
+      "Herculean to increase Control, and Progress Speed. Controlled if Exalted Relic is not available."
+    ]
+  },
+  "Wingripper": {
+    "name": "Wingripper",
+    "url": "https://fischipedia.org/wiki/Wingripper",
+    "lure speed": "222%",
+    "luck": "222%",
+    "control": "0.22",
+    "resilience": "22%",
+    "max kg": "infkg",
+    "line distance": "222m",
+    "recommended_enchants": [
+      "Herculean + Sea Prince to increase Control, Progress Speed, and Fish Size. Controlled if Exalted Relic is not available.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Wisdom Rod": {
+    "name": "Wisdom Rod",
+    "url": "https://fischipedia.org/wiki/Wisdom_Rod",
+    "lure speed": "55%",
+    "luck": "80%",
+    "control": "-0.02",
+    "resilience": "40%",
+    "max kg": "2,000kg",
+    "line distance": "50m",
+    "recommended_enchants": [
+      "Clever to maximize XP gain.",
+      "Due to the rod’s limited nature or other similarly limiting factors there are no miscellaneous enchantments suitable for the rod."
+    ]
+  },
+  "Zeus Rod": {
+    "name": "Zeus Rod",
+    "url": "https://fischipedia.org/wiki/Zeus_Rod",
+    "lure speed": "70%",
+    "luck": "90%",
+    "control": "0.05",
+    "resilience": "20%",
+    "max kg": "65,000kg",
+    "line distance": "70m",
+    "recommended_enchants": [
+      "Blessed Song to drastically increase Progress Speed. Immortal or Steady if Song of the Deep is not available.",
+      "Swift to increase Lure Speed, and Progress Speed.",
+      "Momentum to gradually increase Lure Speed, Resilience, and Progress Speed."
+    ]
+  }
+}
